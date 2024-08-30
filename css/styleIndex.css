@@ -1,0 +1,43 @@
+.rectanguloNegro{
+    width: 1366px;
+    height: 60px;
+    background-color:#000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rectanguloRojo{
+    width: 1366px;
+    height: 40px;
+    background-color:#BA1C3F;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgBaner{
+    margin-top: 50px;
+    margin-left: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgPoster1{
+    margin-top: -370px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btnComprarB{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    background: #BA1C3F;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-top: 10;
+    margin-left: 380px; 
+}
