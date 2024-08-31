@@ -1,6 +1,6 @@
 .rectanguloNegro{
     width: 1366px;
-    height: 60px;
+    height: 80px;
     background-color:#000000;
     display: flex;
     flex-wrap: wrap;
@@ -13,11 +13,104 @@
     flex-wrap: wrap;
 }
 
+.titulo{
+    margin-top: -100px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+
+.letras1{
+    margin-top: -5px;
+    margin-left: 250px;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.letras2{
+    margin-top: -35px;
+    margin-left: 450px;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 0px;
+}
+
+.letras3{
+    margin-top: -25px;
+    margin-left: 750px;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 0px;
+}
+
+.letras4{
+    margin-top: -25px;
+    margin-left: 1010px;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 0px;
+}
+
+.imgUsuario{
+    margin-top: -100px;
+    margin-left: 1200px;
+    padding-bottom: 10px;
+}
+
+.letrasBanner{
+    margin-top: -350px;
+    margin-left: 350px;
+    font-size: 52px;
+    color: white;
+    padding-top: 0px;
+}
+
+.sinopsisBanner{
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 22px;
+    color: white;
+    text-align:justify;
+    padding-bottom: 20px;
+}
+
+.btnComprar{
+    margin-top:-140px;
+    margin-left: 350px; 
+    width: 280px;
+    height: 55px;
+    border-radius: 15px;
+    background: #BA1C3F;
+    color: white;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+   font-style: normal;
+   font-family: Century Gothic;
+}
+
+.btnTrailer{
+    margin-top:-140px;
+    margin-left: 40px; 
+    width: 210px;
+    height: 55px;
+    border-radius: 15px;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+   font-family: Century Gothic;
+}
+
+
 .imgBaner{
     margin-top: 50px;
     margin-left: 75px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 .imgPoster1{
@@ -60,16 +153,16 @@
 }
 
 .imgPoster6{
-    margin-top: 60px;
-    margin-left: 60px;
+    margin-top: -360px;
+    margin-left: 1060px;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .imgPoster7{
-    margin-top: -660px;
-    margin-left: 310px;
+    margin-top: -10px;
+    margin-left: 60px;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -77,13 +170,21 @@
 
 .imgPoster8{
     margin-top: -360px;
-    margin-left: 560px;
+    margin-left: 310px;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .imgPoster9{
+    margin-top:-360px;
+    margin-left: 560px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgPoster10{
     margin-top: -360px;
     margin-left: 810px;
     padding: 15px;
@@ -91,18 +192,20 @@
     flex-wrap: wrap;
 }
 
-
-.btnComprar{
-    margin-top:-1200px;
-    margin-left: 380px; 
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-    background: #BA1C3F;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
+.imgPoster11{
+    margin-top: -360px;
+    margin-left: 1060px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.publicidad1{
+    margin-top: -10px;
+    margin-left: 60px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
