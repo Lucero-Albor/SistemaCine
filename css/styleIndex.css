@@ -20,7 +20,7 @@
 }
 
 .letras1{
-    margin-top: 5px;
+    margin-top: 40px;
     margin-left: 250px;
     font-size: 22px;
     color: white;
@@ -208,4 +208,20 @@
     flex-wrap: wrap;
 }
 
+#buscar{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: -130px;
+    margin-left: 850px;
+    
+}
 
+.input{
+    background-color: #BA1C3F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
