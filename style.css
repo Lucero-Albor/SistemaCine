@@ -1,0 +1,192 @@
+
+body{
+    background-image: url("file:///C:/Users/Julio/Documents/Dise%C3%B1o%20Web/1er_Parcial/Cine/Seleccion_boletos/ma.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto{
+margin-top: 10%;
+margin-left: 300px;
+}
+.texto2{
+    margin-top: 1%;
+    margin-left: 400px;
+}
+.texto3{
+    margin-top: 2%;
+    margin-left: 400px;
+}
+.boton-{
+    margin-top: 0%;
+    margin-left: 300px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+  
+  
+    }
+.botonM{
+      
+    margin-left: 100px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+ 
+ }
+ .PrecioE{
+    margin-top: 2%;
+    margin-left: 440px;
+ }
+ .contador {
+    font-size: 200%;
+    margin: 0 20px;
+    margin-left: 100px;
+}
+.contador-contenedor {
+    display: flex;
+    margin-top: 1%;
+    justify-content: left;
+    align-items: center;
+}
+
+.botonMe{
+    margin-top: 0%;
+    margin-left: 300px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+  
+  
+}
+
+.botonMas{
+      
+        margin-left: 100px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        color: white;
+     
+ }
+ .contador2 {
+    font-size: 200%;
+    margin: 0 20px;
+    margin-left: 100px;
+}
+.contador2-contenedor {
+    display: flex;
+    margin-top: 1%;
+    justify-content: left;
+    align-items: center;
+}
+
+.PrecioP{
+   margin-top: 2%;
+   margin-left: 440px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.content {
+    flex: 2;
+}
+
+
+.right-container {
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-right: 800px;
+    margin-top: 80px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.cartelera {
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+}
+.sele {
+    margin-top: 20px;  
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+   
+}
+
+.Descripcion {
+    margin-top: -270px;
+    flex: 1;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 200px;
+}
+.navegacion {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+    display: block;
+}
+.palo{
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-right: 200px;
+
+    
+}

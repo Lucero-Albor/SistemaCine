@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de boletos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <nav class="navegacion">
+        <ul>
+            <li ><a style="font-family: Arial, Helvetica, sans-serif; font-size: 50px; transform: rotate(-19rad); display: inline-block;"
+                >TheZine</a></li>
+            <img class="palo"  src="C:\Users\Julio\Documents\Diseño Web\1er_Parcial\Cine\Seleccion_boletos\palo.png" 
+            alt="palomas" width="60" height="60">
+            <li ><a href="#">Inicio</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Preventas</a></li>
+            <li><a href="#">Futuros estrenos</a></li>
+            <li style="margin-right:600px;"><a href="#">Contactos</a></li>
+
+        </ul>
+    </nav>
+<div class="main-container">
+   
+    <div class="content">
+        <div>
+            <h1 class="texto" style="font-family: Arial, Helvetica, sans-serif;">
+                Selecciona tus boletos
+            </h1>
+        </div>
+
+        <div class="texto2">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">
+                Boleto Estándar
+            </h1>
+        </div>
+        
+        <div class="contador-contenedor">
+            <button class="boton-" onclick="cambiarCantidad(-1)" style="font-family: Arial, Helvetica, sans-serif; font-size: 200%;">
+                -
+            </button>
+
+            <span id="contador" class="contador">0</span>
+
+            <button class="botonM" onclick="cambiarCantidad(1)" style="font-family: Arial, Helvetica, sans-serif; font-size: 200%;">
+                +
+            </button>
+        </div>
+        
+        <div class="PrecioE">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">$50.25</h1>
+        </div>
+
+        <div class="texto3">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">
+                Boleto Premium
+            </h1>
+        </div>
+
+        <div class="contador2-contenedor">
+            <button class="botonMe" onclick="cambiarCantidadPremium(-1)" style="font-family: Arial, Helvetica, sans-serif; font-size: 200%;">
+                -
+            </button>
+
+            <span id="contadorPremium" class="contador2">0</span>
+            <button class="botonMas" onclick="cambiarCantidadPremium(1)" style="font-family: Arial, Helvetica, sans-serif; font-size: 200%;">
+                +
+            </button>
+        </div>
+
+        <div class="PrecioP">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">$98.38</h1>
+        </div>
+    </div>
+
+   
+    <div class="right-container">
+            <img src="C:\Users\Julio\Documents\Diseño Web\1er_Parcial\Cine\Seleccion_boletos\images.jpg" alt="cartelera" class="cartelera">
+            <button onclick="calcularTotal()" class="sele" style="font-family: Arial, Helvetica, sans-serif">Selección de asientos</button>
+    
+        
+        <div class="Descripcion">
+            <h2>Deadpool 3 & Wolverine</h2>
+            <p style="font-size: small;">Plaza Pozuelos</p>
+            <p style="font-size: small;">Lunes 4 de Enero</p>
+            <p style="font-size: small;">4:30 p.m</p>
+            <p style="font-size: small;">Sala 1</p>
+            <p style="font-size: small;">Español</p>
+            <p style="font-size: 20px; margin-top: 30px; margin-left: 0px;"><b>Total</b></p>
+            <textarea id="total" style="width: 50%; height: 7%"></textarea>
+        </div>
+    </div>
+    
+<script>
+    let contador = 0;
+
+    function cambiarCantidad(cambio) {
+        contador += cambio;
+        if (contador < 0) {
+            contador = 0; 
+        }
+        document.getElementById("contador").innerText = contador;
+    }
+</script>
+
+<script>
+    let contadorEstandar = 0;
+    let contadorPremium = 0;
+
+    function cambiarCantidadEstandar(cambio) {
+        contadorEstandar += cambio;
+        if (contadorEstandar < 0) {
+            contadorEstandar = 0; 
+        }
+        document.getElementById("contadorEstandar").innerText = contadorEstandar;
+    }
+
+    function cambiarCantidadPremium(cambio) {
+        contadorPremium += cambio;
+        if (contadorPremium < 0) {
+            contadorPremium = 0; 
+        }
+        document.getElementById("contadorPremium").innerText = contadorPremium;
+    }
+</script>
+
+</body>
+</html>
