@@ -5,32 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/StylePago.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/styleBarra.css">
     <title>Datos de pago</title>
 </head>
 
 <body>
-    <h1>Datos de pago</h1>
 
+    <header>
+        <div class="rectanguloNegro"></div>
+        <div class="rectanguloRojo"></div>
+        
+        <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+
+        <div class="imgUsuario">
+            <a href="inicio_sesion.html">
+                <img src="imagenes/Iconos/usuarioB.png" width="50px">
+            </a>
+        </div>
+
+        <div style="margin-top: -60px;">
+            <form action="" method="get">
+                <input type="text" name="buscar" id="buscar">
+                <input class="input" type="submit" value="Buscar">
+            </form>
+        </div>
+
+        <div class="letras1">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Inicio</a>
+            </font>
+        </div>
+        <div class="letras2">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Promociones</a>
+            </font>
+        </div>
+
+        <div class="letras3">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Preventas</a>
+            </font>
+        </div>
+
+        <div class="letras4">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Futuros estrenos</a>
+            </font>
+        </div>
+    
+    </header>
+   
+    <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
+    
     <div class="datos">
-        <span>Nombre del titular</span>
-        <input type="text" placeholder="Pepe Papas">
+        <p style="font-size: 18px;">Nombre del titular</p>
+        <input type="text" placeholder="Pepe Papas" class="card" style="font-size: 16px;">
     </div>
 
     <div class="datos">
-        <span>Número de tarjeta</span>
-        <input type="number" placeholder="1111-2222-3333-4444">
+        <p style="font-size: 18px;">Número de tarjeta</p>
+        <input type="number" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;"> 
+        <input type="text" placeholder="123" style="font-size: 16px;" class="cvv">
     </div>
     
     <div class="datos">
-        <span>CVV</span>
-        <input type="number" placeholder="123">
-    </div>
-    
-    <div class="datos">
-        <label style="color: rgb(85, 68, 68);">
-        Fecha de expiración
-        </label>
-        <select name="mes">
+        <p style="font-size: 18px;"> Fecha de expiración </p>
+        <select name="mes" style="font-size: 16px;">
             <option>-- Mes --</option>
             <option>Enero</option>
             <option>Febrero</option>
@@ -45,20 +86,35 @@
             <option>Noviembre</option>
             <option>Diciembre</option>
         </select>
+        <input type="number" placeholder="2024" style="font-size: 16px;" class="anio">
     </div>
-
-    <div class="datos">
-        <span>Año</span>
-        <input type="number" placeholder="2024">
-    </div>
-
+    
     <div class="datos">
         <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
     </div>
    
-    <button class="pagar">Realizar pago</button>
+    <button class="pagar" style="font-size: 25px;">Realizar pago</button>
 
     <div class="pelicula">
+        <div class="info">
+            <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px"alt="">
+        </div>    
+
+        <div class="dato">
+            <h2 style="font-size: 30px;">Detalles</h2>
+            <span>Lugar: Altacia</span><br>
+            <span>Fecha: Lunes 4 de enero</span><br>
+            <span>Hora: 4:30 pm</span><br>
+            <span>Sala: 007</span><br>
+            <span>Idioma: Español</span><br>
+        </div>
+        
+        <center>
+            <div class="total">
+                <h2 style="font-size: 30px;">Total a pagar</h2>
+                <h3 style="font-size: 30px;">$98.38 MXN</h3>
+            </div>
+        </center>
         
     </div>
 </body>
