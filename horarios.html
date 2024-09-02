@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StyleHorario.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/styleBarra.css">
+    <title>Selección de horarios</title>
+</head>
+<body>
+
+    <header>
+        <div class="rectanguloNegro"></div>
+        <div class="rectanguloRojo"></div>
+        
+        <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+
+        <div class="imgUsuario">
+            <a href="inicio_sesion.html">
+                <img src="imagenes/Iconos/usuarioB.png" width="50px">
+            </a>
+        </div>
+
+        <div style="margin-top: -60px;">
+            <form action="" method="get">
+                <input type="text" name="buscar" id="buscar">
+                <input class="input" type="submit" value="Buscar">
+            </form>
+        </div>
+
+        <div class="letras1">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Inicio</a>
+            </font>
+        </div>
+        <div class="letras2">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Promociones</a>
+            </font>
+        </div>
+
+        <div class="letras3">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Preventas</a>
+            </font>
+        </div>
+
+        <div class="letras4">
+            <font face="Arial Narrow">
+                <a style="color: white;" href="">Futuros estrenos</a>
+            </font>
+        </div>
+    
+    </header>
+    <!-- <nav class="barra">
+        <ul>
+            <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+            <li><a href="#">Ayuda</a></li>
+            <div class="imgUsuario">
+                <a href="inicio_sesion.html">
+                    <img src="imagenes/Iconos/usuarioB.png" width="50px">
+                </a>
+            </div>
+        </ul>    
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Preventas</a></li>
+            <li><a href="#">Futuros estrenos</a></li>
+        </ul>
+    </nav> -->
+
+    <div class="detalles">
+        <div class="fechas">
+            <h2 class="titulos">Fechas</h2>
+            <button>Mañana</button>
+            <button>Vie 1 ene.</button>
+            <button>Sáb 2 ene.</button>
+        </div>
+
+        <div class="fechas">
+            <button>Dom 3 ene.</button>
+            <button>Lun 4 ene.</button>
+            <button>Mar 5 ene.</button>
+        </div>
+
+        <h2 class="titulos">Películas</h2>
+        <div class="cartelera">
+            <input type="radio" name="peli" value="deadpool"><label for="deadpool" class="movie">Deadpool & Wolverine</label>
+        </div>
+
+        <div class="cartelera">
+            <input type="radio" name="peli" value="shrek"> <label for="shrek" class="movie">Shrek 2</label>
+        </div>
+
+        <div class="cartelera">
+            <input type="radio" name="peli" value="alien"> <label for="alien" class="movie">Alien</label>
+        </div>
+
+        <div class="cartelera">
+            <input type="radio" name="peli" value="todas" checked> <label for="todas" class="movie">Todas</label> 
+        </div>
+
+        <h2 class="titulos">Idiomas</h2>
+
+        <div class="idioma">
+            <input type="radio" name="lenguaje" value="sub"> <label for="sub" class="leng">Subtitulada</label>
+        </div>
+
+        <div class="idioma">
+            <input type="radio" name="lenguaje" value="esp"> <label for="esp" class="leng">Español</label>
+        </div>
+
+        <div class="idioma">
+            <input type="radio" name="lenguaje" value="todas" checked> <label for="todas" class="leng">Todas</label>
+        </div>
+
+        <button class="boton">Sigue con tu compra</button>
+    </div>
+
+    <div class="menu">
+        <div class="peliculas">
+            <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px"alt="">
+            <h1 class="deadpool">Deadpool & Wolverine</h1>
+            <div class="horarios">
+                <span>Español</span>
+                <button>2:10 pm</button>
+                <button>3:00 pm</button>
+                <button>4:30 pm</button>
+                <button>5:50 pm</button>
+                <button>7:20 pm</button>
+            </div>
+            
+            <div class="horarios">
+                <span>Subtitulada</span>
+                <button>1:15 pm</button>
+                <button>2:40 pm</button>
+                <button>5:30 pm</button>
+                <button>6:50 pm</button>        
+            </div>
+        </div>
+
+        <div class="peliculas">
+            <div class="horarios">
+                <img class="cartelera" src="imagenes/Inicio/Poster(5).jpg" width="150px"alt="">
+                <h1 class="shrek">Shrek 2</h1>
+                <span>Español</span>
+                <button>2:10 pm</button>
+                <button>3:00 pm</button>
+                <button>4:30 pm</button>
+                <button>5:50 pm</button>
+                <button>7:20 pm</button>
+            </div>
+            
+            <div class="horarios">
+                <span>Subtitulada</span>
+                <button>1:15 pm</button>
+                <button>2:40 pm</button>
+                <button>5:30 pm</button>
+                <button>6:50 pm</button>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

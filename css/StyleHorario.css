@@ -1,0 +1,46 @@
+.detalles {
+    height: 100%;
+    width: 270px;
+    position: absolute;
+    background-color: #BA1C3F;
+    padding: 20px;
+}
+
+.menu {
+    height: 80%;
+    width: 600px;
+    position: relative;
+    top: 50px;
+    left: 350px;
+}
+
+label{
+    
+}
+
+.boton{
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 40px;
+    width: 220px;
+    height: 40px;
+    background-color: white;
+}
+
+.cartelera{
+
+}
+
+
+
+.movie{
+    color: white;
+}
+
+.leng{
+    color: white;
+}
+
+.titulos{
+    color: white;
+}
