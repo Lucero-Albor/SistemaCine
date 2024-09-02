@@ -14,24 +14,27 @@
     left: 350px;
 }
 
-label{
-    
-}
-
 .boton{
-    margin-top: 30px;
-    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 5px;
     border-radius: 40px;
-    width: 220px;
-    height: 40px;
+    width: 260px;
+    height: 50px;
     background-color: white;
 }
 
-.cartelera{
-
+.peliculas{
+    position: relative;
 }
 
+.horarios{
+    position: absolute;
+}
 
+.nombre{
+    position: absolute;
+}
 
 .movie{
     color: white;
