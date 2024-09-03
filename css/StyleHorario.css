@@ -36,14 +36,6 @@
     position: absolute;
 }
 
-.movie{
-    color: white;
-}
-
-.leng{
-    color: white;
-}
-
-.titulos{
+.movie, .leng, .titulos{
     color: white;
 }
