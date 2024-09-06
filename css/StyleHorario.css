@@ -1,12 +1,108 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    box-sizing: content-box; 
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(185, 185, 185); */
+}
+
 .detalles {
-    height: 100%;
-    width: 270px;
-    position: absolute;
+    width: 250px;
+    margin: 0px;
     background-color: #BA1C3F;
     padding: 20px;
+    flex-direction: column;
+}
+
+.fecha{
+    padding-top: 3px;
+    font-size: 14px;
+    border-radius: 40px;
+    width: 120px;
+    height: 30px;
+    background-color: #BA1C3F;
+    border-color: white;
+    border-style: solid;
+    color: white;
+}
+
+.fecha:hover{
+    background-color: white;
+    color: black;
+}
+
+.fecha:active{
+    background-color: white;
+    color: black;
+}
+
+.boton{
+    font-size: 18px;
+    margin-top: 18px;
+    border-radius: 40px;
+    width: 220px;
+    height: 45px;
+    background-color: white;
+    border: none;
+}
+
+.menu{
+    flex-direction: column;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 20px; 
+}
+
+.horarios{
+    padding-top: -80px;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.movie, .leng, .titulos{
+    color: white;
+}
+
+.hora{
+    font-size: 18px;
+    margin-top: 18px;
+    border-radius: 5px;
+    border-color: #BA1C3F;
+    height: 35px;
+    width: 100px;
+    background-color: white;    
+    border-width: 3px;
+}
+
+.hora:hover{
+    background-color: #BA1C3F;
+    color: white;
+}
+
+.hora:active{
+    background-color: #BA1C3F;
+}
+
+b{
+    font-size: 20px;
 }
  
-.menu {
+/* .menu {
     height: 80%;
     width: 600px;
     position: relative;
@@ -38,4 +134,4 @@
 
 .movie, .leng, .titulos{
     color: white;
-}
+} */
