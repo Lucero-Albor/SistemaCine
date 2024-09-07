@@ -56,7 +56,62 @@
     
     </header>
    
-    <font face="Arial Narrow">
+    <div class="container">
+        <div class="menu_pago">
+            <div class="datos">
+                <center><h1 class="tit" style="font-size: 40px;">Datos de pago</h1></center>
+                <p style="font-size: 18px;">Nombre del titular</p>
+                <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre"  required>
+                <p style="font-size: 18px;">Número de tarjeta</p>  
+                <input type="text" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;" id="num_card" maxlength="16" required> 
+                <p style="font-size: 18px;">CVV</p>
+                <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" maxlength="3" required>
+                <p style="font-size: 18px;"> Fecha de expiración </p>
+                <select name="mes" style="font-size: 16px;" class="card" required> 
+                    <option>-- Mes --</option>
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select>
+                <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" maxlength="4" required>
+                <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
+                <center><button class="pagar" style="font-size: 25px;">Realizar pago</button></center>
+            </div>
+        </div>
+        
+        <div class="detalles">
+            <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px" height="220px">
+            
+            <div class="info">
+                <font face="Arial Narrow"></font>
+                    <h2 style="font-size: 30px;">Detalles</h2>
+                    <span style="font-size: 20px;">Lugar: Altacia</span><br>
+                    <span style="font-size: 20px;">Fecha: Lunes 4 de enero</span><br>
+                    <span style="font-size: 20px;">Hora: 4:30 pm</span><br>
+                    <span style="font-size: 20px;">Sala: 007</span><br>
+                    <span style="font-size: 20px;">Idioma: Español</span><br>
+                </font>
+            </div>
+
+            <div class="total">
+                <font face="Arial Narrow">
+                    <h2 style="font-size: 30px;">Total a pagar</h2>
+                    <h3 style="font-size: 30px;">$98.38 MXN</h3>    
+                </font>
+            </div>
+        </div>
+    </div>
+
+    <!-- <font face="Arial Narrow">
         <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
     
         <div class="datos">
@@ -124,6 +179,6 @@
             </div>
         </center>
         
-    </div>
+    </div> -->
 </body>
 </html>
