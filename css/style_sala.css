@@ -40,7 +40,7 @@ body{
 
 
 .sillas{
-    margin-top: -400px;    
+    margin-top: -450px;    
     justify-content: flex-start;
     margin-left: 170px;
     display: flex;
@@ -85,7 +85,7 @@ body{
 .cartel button{
     width: 100px;
     height: 50px;
-    font-family:  'Arial Narrow';
+    font-family:  'Century Gothic';
     font-size: x-large;
     border-radius: 20px;
     border-bottom: 0;
@@ -99,10 +99,7 @@ body{
 @media(min-width: 1024px) and (max-width: 2048px){
     .container{
         padding: 0 40px;
-       
     }
-  
-    
 }
 
 /*Estilos para pantallas de tablets*/
@@ -118,7 +115,7 @@ body{
     .container2{
         width: 100%;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
     }
     .img-mover{
@@ -139,7 +136,7 @@ body{
     .container2{
         width: 100%;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
     }
     .img-mover{
