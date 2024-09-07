@@ -1,4 +1,94 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    box-sizing: content-box; 
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0px;
+    flex-wrap: wrap;
+    display: flex;
+    /* background-color: rgb(185, 185, 185); */
+}
+
+.menu_pago{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    /* background-color: blueviolet; */
+}
+
 .datos{
+    padding-left: 50px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.tarjeta{
+    width: 200px;
+    height: 80px;
+    margin-left: 180px;
+    margin-top: -90px;
+}
+
+.detalles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    background-color: #3E3A3A;
+    border-radius: 40px;
+    color: white;
+}
+
+.info{
+    padding-left: 30px;
+}
+
+.total{
+    text-align: center;
+    margin:auto;
+    /* background-color: blue; */
+}
+
+.card{
+    padding-left: 20px;
+    border-color: black;
+    border-radius: 40px;
+    border-width: 3px;
+    height: 30px;
+}
+
+#anio, #cvv{
+    width: 70px;
+}
+
+.pagar{
+    margin-top: 40px;
+    border-color: #BA1C3F;
+    background-color: #BA1C3F;
+    color: white;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+.pagar:hover{
+    background-color: white;
+    color: #BA1C3F;
+}
+
+.pagar:active{
+    background-color: white;
+}
+
+/* .datos{
     margin-left: 100px;
 }
 
@@ -74,4 +164,4 @@ h3{
     height: 50px;
     background-color: #BA1C3F;
     color: white;
-}
+} */
