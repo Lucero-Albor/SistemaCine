@@ -9,14 +9,22 @@
     <title>Inicio</title>
 </head>
 
-<body>
+<body class="container">
 
     <header style="display: flex; flex-wrap: wrap;">
         <div class="rectanguloNegro"></div>
         <div class="rectanguloRojo"></div>
+
+        <div class="letrasBarra">
+            <font face="Arial Narrow">
+                <a class="letras1" style="color: white;" href="">Inicio</a>
+                <a class="letras1" style="color: white;" href="">Promociones</a>
+                <a class="letras1" style="color: white;" href="">Preventas</a>
+                <a class="letras1" style="color: white;" href="">Futuros estrenos</a>
+            </font>
+        </div>
         
-        
-            <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+        <img class="logoCine" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
 
          <div class="imgUsuario">
             <a href="inicio_sesion.html">
@@ -30,171 +38,117 @@
                 <input class="input" type="submit" value="Buscar">
             </form>
         </div>
-
-        <div class="letras1">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Inicio</a>
-            </font>
-        </div>
-        <div class="letras2">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Promociones</a>
-            </font>
-        </div>
-
-        <div class="letras3">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Preventas</a>
-            </font>
-        </div>
-
-        <div class="letras4">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Futuros estrenos</a>
-            </font>
-        </div>
-    
     </header>
 
     <nav>
-        
-        <font face="Century Gothic">
-            <ul class="menu-horizontal">
-                <li>
-                    <a href="#"><b>Seleccione su ciudad</b></a>
-                    <ul class="menu-vertical">
-                        <li><a href="#">Guanajuato</a></li>
-                        <li><a href="#">León</a></li>
-                        <li><a href="#">Silao</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><b>Seleccione su cine</b></a>
-                    <ul class="menu-vertical">
-                        <li><a href="#">Alaia</a></li>
-                        <li><a href="#">Altacia</a></li>
-                        <li><a href="#">La joya</a></li>
-                    </ul>
-                </li>
-    
-            </ul>
-        </font>
-
-        <!--
-        <div >
-            <ul class=" menu-horizontal">
-                <font face="Century Gothic">
+        <div>
+            <font face="Century Gothic">
+                <ul class="menu-horizontal">
                     <li>
-                        <a href="#"><img style="margin-top: -400px; margin-left: 1000px;" src="imagenes/Iconos/usuarioB.png" width="50px"></a>
+                        <a href="#"><b>Seleccione su ciudad</b></a>
                         <ul class="menu-vertical">
-                            <li><a href="#">Iniciar sesión</a></li>
-                            <li><a href="#">Registrarse</a></li>
+                            <li><a href="#">Guanajuato</a></li>
+                            <li><a href="#">León</a></li>
+                            <li><a href="#">Silao</a></li>
                         </ul>
                     </li>
                     <li>
-                </font>
-            </ul>
-            
-        </div>
-       
-
-         <font face="Century Gothic">
-            <ul class="menu-horizontal">
-                <li>
-                    <p><b>Seleccione su ciudad</b></p>
-                    <ul class="menu-vertical">
-                        <select name="nombreCiudad" id="nombreCiudad">
-                            <option value="Guanajuato">Guanajuato</option>
-                            <option value="Leon">León</option>
-                            <option value="Silao">Silao</option>
-                        </select>
-                    </ul>
-                    
-                </li>
-                <li>
-                    <p><b>Seleccione su cine</b></p>
-                    <ul class="menu-vertical">
-                        <select name="nombreCine" id="nombreCine">
-                            <option value="Alaia">Alaia</option>
-                            <option value="Altacia">Altacia</option>
-                            <option value="La_joya">La joya</option>
-                        </select>
-                    </ul>
-                </li>
+                        <a href="#"><b>Seleccione su cine</b></a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Alaia</a></li>
+                            <li><a href="#">Altacia</a></li>
+                            <li><a href="#">La joya</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </font>
+        </div> 
     
-            </ul>
-        </font>
-        -->
-
 	</nav>
+
+        
+   
+    
     
         <article>
-            <img class="imgBaner" src="imagenes/Inicio/Banner.jpg"  width="1220">
-            <img class="imgPoster1" src="imagenes/Inicio/Poster(2).jpg"  width="220">
+
             
-            <div class="letrasBanner">
-                <font face="Impact">
-                    <p>Deadpool y Wolverine</p>
-                </font>
-            </div>
-
-            <div class="sinopsisBanner">
-                <font face="Arial Narrow">
-                    <p>Un apático Wade Wilson se esfuerza por adaptarse a la vida civil. <br>
-                        Sus días como el mercenario moralmente flexible, Deadpool, <br>
-                        han quedado atrás. Cuando su mundo se enfrenta a una amenaza <br>
-                        existencial, reaciamente Wade debe ponerse el traje de nuevo.</p>
-                </font>
-            </div>
-
             <div>
-                <a href="">
-                    <button class="btnComprar">Compra tus boletos</button>
-                </a>
-                    <a href="">
-                        <button class="btnTrailer">Tráiler</button>
-                    </a>  
+                <img  class="banner" src="imagenes/Inicio/Banner.jpg" width="1220">
+                
             </div>
+            
+                 <div class="textoBanner">
+                     <div class="tituloBanner">
+                         <font face="Impact">
+                             <p>Deadpool y Wolverine</p>
+                         </font>
+                         <img  class="imgPoster1" src="imagenes/Inicio/Poster(2).jpg" width="220">
+                     </div>
+         
+                     <div class="sinopsisBanner">
+                         <font face="Arial Narrow">
+                             <p>Un apático Wade Wilson se esfuerza por adaptarse a la vida civil.
+                                 Sus días como el mercenario moralmente flexible, Deadpool,
+                                 han quedado atrás. Cuando su mundo se enfrenta a una amenaza 
+                                 existencial, reaciamente Wade debe ponerse el traje de nuevo.</p>
+                         </font>
 
-            <div>
+                            <a href="">
+                                <button  class="btnTrailer">Tráiler</button>
+                            </a>
+                        
+                             <button class="btnComprar">Compra tus boletos</button>
+                                
+                             
+                            
+                     </div>
+                 </div>
+            </div>
+               
+
+            <div class="cartelera">
                 <a href="">
                     <img class="imgPoster2" src="imagenes/Inicio/Poster(1).jpg"  width="220">
                 </a>
                 <a href="">
-                    <img class="imgPoster3" src="imagenes/Inicio/Poster(3).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(3).jpg"  width="220">
                 </a>
                 <a href="">
-                    <img class="imgPoster4" src="imagenes/Inicio/Poster(4).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(4).jpg"  width="220">
                 </a>
                 <a href="">
-                    <img class="imgPoster5" src="imagenes/Inicio/Poster(5).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(5).jpg"  width="220">
                 </a>
                 <a href="">
-                    <img class="imgPoster6" src="imagenes/Inicio/Poster(6).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(6).jpg"  width="220">
                 </a>
-
+    
                 <a href="">
-                    <img class="imgPoster7" src="imagenes/Inicio/Poster(7).jpg"  width="220">
-                </a>
-
-                <a href="">
-                    <img class="imgPoster8" src="imagenes/Inicio/Poster(8).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(7).jpg"  width="220">
                 </a>
 
                 <a href="">
-                    <img class="imgPoster9" src="imagenes/Inicio/Poster(9).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(8).jpg"  width="220">
                 </a>
 
                 <a href="">
-                    <img class="imgPoster10" src="imagenes/Inicio/Poster(10).jpg"  width="220" height="330px">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(9).jpg"  width="220">
                 </a>
 
                 <a href="">
-                    <img class="imgPoster11" src="imagenes/Inicio/Poster(11).jpg"  width="220">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(10).jpg"  width="220" height="330px">
+                </a>
+
+                <a href="">
+                    <img class="imgPoster2" src="imagenes/Inicio/Poster(11).jpg"  width="220">
                 </a>
             </div>
 
-            <img class="imgPoster7" src="imagenes/Inicio/Publicidad(1).jpg"  width="1000">
+            <div>
+                <img class="publicidad1" src="imagenes/Inicio/Publicidad(1).jpg"  width="1000">
+            </div>
+            
         </article>
         
         
