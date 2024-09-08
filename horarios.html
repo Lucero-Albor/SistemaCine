@@ -9,49 +9,33 @@
     <title>Selección de horarios</title>
 </head>
 <body>
-
-    <header>
+    <header style="display: flex; flex-wrap: wrap;">
         <div class="rectanguloNegro"></div>
         <div class="rectanguloRojo"></div>
-        
-        <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
 
-        <div class="imgUsuario">
+        <div class="letrasBarra">
+            <font face="Arial Narrow">
+                <a class="letras1" style="color: white;" href="">Inicio</a>
+                <a class="letras1" style="color: white;" href="">Promociones</a>
+                <a class="letras1" style="color: white;" href="">Preventas</a>
+                <a class="letras1" style="color: white;" href="">Futuros estrenos</a>
+            </font>
+        </div>
+        
+        <img class="logoCine" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+
+         <div class="imgUsuario">
             <a href="inicio_sesion.html">
                 <img src="imagenes/Iconos/usuarioB.png" width="50px">
             </a>
         </div>
 
-        <div style="margin-top: -60px;">
+        <div style="margin-top: -100px;">
             <form action="" method="get">
                 <input type="text" name="buscar" id="buscar">
                 <input class="input" type="submit" value="Buscar">
             </form>
         </div>
-
-        <div class="letras1">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Inicio</a>
-            </font>
-        </div>
-        <div class="letras2">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Promociones</a>
-            </font>
-        </div>
-
-        <div class="letras3">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Preventas</a>
-            </font>
-        </div>
-
-        <div class="letras4">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Futuros estrenos</a>
-            </font>
-        </div>
-    
     </header>
     <!-- <nav class="barra">
         <ul>
@@ -77,16 +61,15 @@
                 <font face="Arial Narrow"><h2 class="titulos">Fechas</h2></font>
                 <font face="Century">
                     <button class="fecha">Mañana</button>
-                    <button class="fecha">Vie 1 ene.</button>
+                    <button class="fecha">Vie 1 ene.</button><br>
                     <button class="fecha">Sáb 2 ene.</button>
-                    <button class="fecha">Dom 3 ene.</button>
+                    <button class="fecha">Dom 3 ene.</button><br>
                     <button class="fecha">Lun 4 ene.</button>
                     <button class="fecha">Mar 5 ene.</button>
                 </font>
-                
             </div>
 
-            <div class="cartelera">
+            <div class="movies">
                 <font face="Arial Narrow">
                     <h2 class="titulos">Películas</h2>
                     <input type="radio" name="peli" value="deadpool"><label for="deadpool" class="movie" style="font-size: 20px;">Deadpool & Wolverine</label><br>
