@@ -14,14 +14,12 @@ body{
 .menu_pago{
     display: flex;
     flex-wrap: wrap;
-    /* background-color: blueviolet; */
     padding-left: 55px;
     margin-left: 40px;
     margin-top: 30px;
 }
 
 .numeros{
-    /* background-color: cornflowerblue; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -29,7 +27,6 @@ body{
 }
 
 .num_num, .cvv_num{
-    /* background-color: rgb(26, 59, 120); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -133,82 +130,3 @@ select {
         flex-wrap: wrap;
     }
 }
-
-
-/* .datos{
-    margin-left: 100px;
-}
-
-.tit{
-    margin-left: 230px;
-    margin-top: 50px;
-}
-
-.card{
-    width: 280px;
-}
-
-.anio{
-    font-size: 10px;
-}
-
-.cvv{
-    width: 40px;
-}
-
-.anio{
-    width: 50px;
-}
-
-.pelicula{
-    margin-top: -430px;
-    margin-left: 700px;
-    padding: 20px;
-    width: 460px;
-    position: static;
-    background-color: #3E3A3A;
-    border-radius: 40px;
-}
-
-.dato{
-    font-size: 20px;
-    padding-left: 240px;
-    padding-top: -300px;
-    margin-top: -230px;
-}
-
-.info{
-    padding-left: 40px;
-    padding-right: -100px;
-    margin-right: 70px;
-    margin-top: 30px;
-}
-
-.total{
-    margin-top: 50px;
-}
-
-span, h2{
-    color: white;
-}
-
-h3{
-    color: #BA1C3F;
-}
-
-.tarjeta{
-    width: 200px;
-    height: 80px;
-    margin-left: 180px;
-    margin-top: -90px;
-}
-
-.pagar{
-    margin-top: 30px;
-    margin-left: 200px;
-    border-radius: 40px;
-    width: 280px;
-    height: 50px;
-    background-color: #BA1C3F;
-    color: white;
-} */
