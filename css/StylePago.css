@@ -1,6 +1,5 @@
 body{
     background-color: rgb(255, 255, 255);
-    margin: 0;
     box-sizing: content-box; 
 }
 
@@ -15,30 +14,45 @@ body{
 .menu_pago{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px;
     /* background-color: blueviolet; */
+    padding-left: 55px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
-.datos{
-    padding-left: 50px;
+.numeros{
+    /* background-color: cornflowerblue; */
+    display: flex;
     flex-wrap: wrap;
-    margin: 50px;
+    flex-direction: row;
+    margin: 25px 0px 25px;
+}
+
+.num_num, .cvv_num{
+    /* background-color: rgb(26, 59, 120); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .tarjeta{
+    display: flex;
+    flex-wrap: wrap;
     width: 200px;
     height: 80px;
-    margin-left: 180px;
-    margin-top: -90px;
+    margin-left: 250px;
+    margin-top: -70px;
 }
 
 .detalles{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 390px;
-    margin-left: 40px;
-    margin-top: 50px;
-    padding-left: 30px;
+    height: 420px;
+    margin-left: 100px;
+    margin-top: 40px;
+    padding-left: 40px;
     padding-top: 40px;
     padding-right: 30px;
     background-color: #3E3A3A;
@@ -46,14 +60,13 @@ body{
     color: white;
 }
 
-.info{
-    padding-left: 30px;
+.total{
+    margin: auto;
+    /* background-color: blue; */
 }
 
-.total{
-    text-align: center;
-    margin:auto;
-    /* background-color: blue; */
+.info{
+    padding-left: 40px;
 }
 
 .card{
@@ -69,13 +82,13 @@ body{
 }
 
 .pagar{
-    margin-top: 40px;
+    margin: 40px 0px 30px 80px;
     border-color: #BA1C3F;
     background-color: #BA1C3F;
     color: white;
     border-width: 3px;
     border-radius: 10px;
-    width: 250px;
+    width: 230px;
     height: 50px;
 }
 
@@ -87,6 +100,16 @@ body{
 .pagar:active{
     background-color: white;
 }
+
+.tit{
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 40px 0px 30px 90px;
+}
+
+select { 
+    width: 150px;
+}
+
 
 /* .datos{
     margin-left: 100px;
