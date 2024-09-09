@@ -1,5 +1,5 @@
 body{
-    background-image: url("file:///C:/Users/Julio/Documents/Dise%C3%B1o%20Web/1er_Parcial/Cine/cine%20(1).jpg");
+    background-image: url("/Login/cine%20(1).jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +45,7 @@ body{
     
 }
 .letra{
-    font-size: small;
+    font-size: 20px;
 }
 .U{
   margin-top: 30px;
@@ -66,6 +66,7 @@ body{
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: Century Gothic;
 }
 .links {
     margin-top: 10px;
@@ -75,7 +76,7 @@ body{
 .link {
     display: block;
     margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Century Gothic;
     color: #007bff;
     text-decoration: none;
     text-decoration: underline;
