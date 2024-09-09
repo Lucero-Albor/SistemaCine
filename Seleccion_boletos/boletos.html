@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de boletos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="rectanguloNegro"></div>
+        <div class="rectanguloRojo"></div>
+
+        <img class="logo" src="http://localhost/Dise%C3%B1o%20Web/1er_Parcial/Cine/Seleccion_boletos/LogoCine.png" width="200px" alt="Logo">
+        
+        <nav class="navegacion">
+            <a href="#" class="navegacionE">Inicio</a>  
+            <a href="#" class="navegacionE">Promociones</a>
+            <a href="#" class="navegacionE">Preventas</a>
+            <a href="#" class="navegacionE">Futuros estrenos</a>
+        </nav>
+
+        <div class="Ayuda">Ayuda</div>
+
+        <img src="http://localhost/Dise%C3%B1o%20Web/1er_Parcial/Cine/Seleccion_boletos/usuarioB.png" alt="Usuario" class="usuarioimg">
+    </header>
+    
+    <main class="main-container">
+        <div class="content">
+            <h1 class="texto">Selecciona tus boletos</h1>
+
+            <div  class="texto2" >
+                <h2>Boleto Estándar</h2>
+            </div>
+            
+            <div class="contador-contenedor">
+                <button class="boton-" onclick="cambiarCantidad(-1)">-</button>
+                <span id="contador" class="contador">0</span>
+                <button class="botonM" onclick="cambiarCantidad(1)">+</button>
+            </div>
+            
+            <div class="PrecioE">
+                <h2>$50.25</h2>
+            </div>
+
+            <div class="texto3">
+                <h2>Boleto Premium</h2>
+            </div>
+
+            <div class="contador2-contenedor">
+                <button class="botonMe" onclick="cambiarCantidadPremium(-1)">-</button>
+                <span id="contadorPremium" class="contador2">0</span>
+                <button class="botonMas" onclick="cambiarCantidadPremium(1)">+</button>
+            </div>
+
+            <div class="PrecioP">
+                <h2>$98.38</h2>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <img src="http://localhost/Dise%C3%B1o%20Web/1er_Parcial/Cine/Seleccion_boletos/images.jpg" alt="cartelera" class="cartelera">
+            <button onclick="calcularTotal()" class="sele">Selección de asientos</button>
+        
+            <div class="Descripcion">
+                <h2>Deadpool 3 & Wolverine</h2>
+                <p>Plaza Pozuelos</p>
+                <p>Lunes 4 de Enero</p>
+                <p>4:30 p.m</p>
+                <p>Sala 1</p>
+                <p>Español</p>
+                <p><strong>Total</strong></p>
+                <textarea id="total" style="width: 100%; height: 7%"></textarea>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let contador = 0;
+
+        function cambiarCantidad(cambio) {
+            contador += cambio;
+            if (contador < 0) {
+                contador = 0; 
+            }
+            document.getElementById("contador").innerText = contador;
+        }
+
+        let contadorPremium = 0;
+
+        function cambiarCantidadPremium(cambio) {
+            contadorPremium += cambio;
+            if (contadorPremium < 0) {
+                contadorPremium = 0; 
+            }
+            document.getElementById("contadorPremium").innerText = contadorPremium;
+        }
+    </script>
+</body>
+</html>
