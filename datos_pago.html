@@ -11,80 +11,87 @@
 </head>
 
 <body>
-
-    <header>
+    <header style="display: flex; flex-wrap: wrap;">
         <div class="rectanguloNegro"></div>
         <div class="rectanguloRojo"></div>
-        
-        <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
 
-        <div class="imgUsuario">
+        <div class="letrasBarra">
+            <font face="Arial Narrow">
+                <a class="letras1" style="color: white;" href="">Inicio</a>
+                <a class="letras1" style="color: white;" href="">Promociones</a>
+                <a class="letras1" style="color: white;" href="">Preventas</a>
+                <a class="letras1" style="color: white;" href="">Futuros estrenos</a>
+            </font>
+        </div>
+        
+        <img class="logoCine" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
+
+         <div class="imgUsuario">
             <a href="inicio_sesion.html">
                 <img src="imagenes/Iconos/usuarioB.png" width="50px">
             </a>
         </div>
 
-        <div style="margin-top: -60px;">
+        <div style="margin-top: -100px;">
             <form action="" method="get">
                 <input type="text" name="buscar" id="buscar">
                 <input class="input" type="submit" value="Buscar">
             </form>
         </div>
-
-        <div class="letras1">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Inicio</a>
-            </font>
-        </div>
-        <div class="letras2">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Promociones</a>
-            </font>
-        </div>
-
-        <div class="letras3">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Preventas</a>
-            </font>
-        </div>
-
-        <div class="letras4">
-            <font face="Arial Narrow">
-                <a style="color: white;" href="">Futuros estrenos</a>
-            </font>
-        </div>
-    
     </header>
    
     <div class="container">
         <div class="menu_pago">
             <div class="datos">
-                <center><h1 class="tit" style="font-size: 40px;">Datos de pago</h1></center>
-                <p style="font-size: 18px;">Nombre del titular</p>
-                <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre"  required>
-                <p style="font-size: 18px;">Número de tarjeta</p>  
-                <input type="text" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;" id="num_card" maxlength="16" required> 
-                <p style="font-size: 18px;">CVV</p>
-                <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" maxlength="3" required>
-                <p style="font-size: 18px;"> Fecha de expiración </p>
-                <select name="mes" style="font-size: 16px;" class="card" required> 
-                    <option>-- Mes --</option>
-                    <option>Enero</option>
-                    <option>Febrero</option>
-                    <option>Marzo</option>
-                    <option>Abril</option>
-                    <option>Mayo</option>
-                    <option>Junio</option>
-                    <option>Julio</option>
-                    <option>Agosto</option>
-                    <option>Septiembre</option>
-                    <option>Octubre</option>
-                    <option>Noviembre</option>
-                    <option>Diciembre</option>
-                </select>
-                <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" maxlength="4" required>
+                <font face="Arial Narrow">
+                    <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
+                
+                    <div class="titular">
+                        <b style="font-size: 22px;">Nombre del titular</b><br>
+                        <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre"  required>
+                    </div>
+                </font>
+
+                <div class="numeros">
+                    <div class="num_num">
+                        <font face="Arial Narrow">
+                            <b style="font-size: 22px;">Número de tarjeta</b>
+                        </font>
+                        <font face="Century">
+                            <input type="text" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;" id="num_card" maxlength="16" required>
+                        </font>
+                    </div>
+                    <div class="cvv_num">
+                        <font face="Arial Narrow">
+                            <b style="font-size: 22px;">CVV</b>
+                        </font>
+                        <font face="Century">
+                            <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" maxlength="3" required>
+                        </font>
+                    </div>
+                </div>
+
+                <font face="Arial Narrow"><b style="font-size: 22px;"> Fecha de expiración </b><br></font>
+                <font face="Century">
+                    <select name="mes" style="font-size: 16px;" class="card" required> 
+                        <option>-- Mes --</option>
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo</option>
+                        <option>Abril</option>
+                        <option>Mayo</option>
+                        <option>Junio</option>
+                        <option>Julio</option>
+                        <option>Agosto</option>
+                        <option>Septiembre</option>
+                        <option>Octubre</option>
+                        <option>Noviembre</option>
+                        <option>Diciembre</option>
+                    </select>
+                    <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" maxlength="4" required>
+                </font>
                 <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
-                <center><button class="pagar" style="font-size: 25px;">Realizar pago</button></center>
+                <button class="pagar" style="font-size: 25px;">Realizar pago</button>
             </div>
         </div>
         
@@ -92,7 +99,7 @@
             <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px" height="220px">
             
             <div class="info">
-                <font face="Arial Narrow"></font>
+                <font face="Arial Narrow">
                     <h2 style="font-size: 30px;">Detalles</h2>
                     <span style="font-size: 20px;">Lugar: Altacia</span><br>
                     <span style="font-size: 20px;">Fecha: Lunes 4 de enero</span><br>

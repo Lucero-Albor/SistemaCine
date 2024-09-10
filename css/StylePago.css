@@ -1,6 +1,5 @@
 body{
     background-color: rgb(255, 255, 255);
-    margin: 0;
     box-sizing: content-box; 
 }
 
@@ -15,45 +14,55 @@ body{
 .menu_pago{
     display: flex;
     flex-wrap: wrap;
-    margin: 0px;
-    /* background-color: blueviolet; */
+    padding-left: 55px;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
-.datos{
-    padding-left: 50px;
+.numeros{
+    display: flex;
     flex-wrap: wrap;
-    margin: 50px;
+    flex-direction: row;
+    margin: 25px 0px 25px;
+}
+
+.num_num, .cvv_num{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .tarjeta{
+    display: flex;
+    flex-wrap: wrap;
     width: 200px;
     height: 80px;
-    margin-left: 180px;
-    margin-top: -90px;
+    margin-left: 250px;
+    margin-top: -70px;
 }
 
 .detalles{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 390px;
-    margin-left: 40px;
-    margin-top: 50px;
-    padding-left: 30px;
-    padding-top: 40px;
+    max-width: 400px;
+    margin-left: 100px;
+    margin-top: 40px;
     padding-right: 30px;
     background-color: #3E3A3A;
     border-radius: 40px;
     color: white;
 }
 
-.info{
+.total{
+    margin: auto;
     padding-left: 30px;
+    /* background-color: blue; */
 }
 
-.total{
-    text-align: center;
-    margin:auto;
-    /* background-color: blue; */
+.info{
+    padding-left: 20px;
+    padding-top: 40px;
 }
 
 .card{
@@ -69,13 +78,13 @@ body{
 }
 
 .pagar{
-    margin-top: 40px;
+    margin: 40px 0px 30px 80px;
     border-color: #BA1C3F;
     background-color: #BA1C3F;
     color: white;
     border-width: 3px;
     border-radius: 10px;
-    width: 250px;
+    width: 230px;
     height: 50px;
 }
 
@@ -88,80 +97,36 @@ body{
     background-color: white;
 }
 
-/* .datos{
-    margin-left: 100px;
-}
-
 .tit{
-    margin-left: 230px;
-    margin-top: 50px;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 40px 0px 30px 90px;
 }
 
-.card{
-    width: 280px;
+select { 
+    width: 150px;
 }
 
-.anio{
-    font-size: 10px;
+/*Estilos para pantallas escritorio*/
+@media(min-width: 1024px) and (max-width: 2048px){
+    .container{
+        padding: 0 40px;
+    }
 }
 
-.cvv{
-    width: 40px;
+/*Estilos para pantallas de tablets*/
+@media(min-width: 760px) and (max-width:960px){
+    .container{
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.anio{
-    width: 50px;
+/*Estilos para pantalla de móviles*/
+@media (max-width: 760px){
+    .container{
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-
-.pelicula{
-    margin-top: -430px;
-    margin-left: 700px;
-    padding: 20px;
-    width: 460px;
-    position: static;
-    background-color: #3E3A3A;
-    border-radius: 40px;
-}
-
-.dato{
-    font-size: 20px;
-    padding-left: 240px;
-    padding-top: -300px;
-    margin-top: -230px;
-}
-
-.info{
-    padding-left: 40px;
-    padding-right: -100px;
-    margin-right: 70px;
-    margin-top: 30px;
-}
-
-.total{
-    margin-top: 50px;
-}
-
-span, h2{
-    color: white;
-}
-
-h3{
-    color: #BA1C3F;
-}
-
-.tarjeta{
-    width: 200px;
-    height: 80px;
-    margin-left: 180px;
-    margin-top: -90px;
-}
-
-.pagar{
-    margin-top: 30px;
-    margin-left: 200px;
-    border-radius: 40px;
-    width: 280px;
-    height: 50px;
-    background-color: #BA1C3F;
-    color: white;
-} */
