@@ -108,15 +108,18 @@ body{
         padding: 0 10px;
         display: flex;
         flex-wrap: wrap;
+
     }
     .asientos{
         width: 100%;
+        
     }
     .container2{
         width: 100%;
         margin-top: 0px;
         margin-left: 10px;
         margin-right: 0px;
+     
     }
     .img-mover{
         width: 35px;
@@ -132,12 +135,16 @@ body{
     }
     .asientos{
         width: 100%;
+      
+        
     }
     .container2{
         width: 100%;
         margin-top: 0px;
         margin-left: 10px;
         margin-right: 0px;
+        
+        
     }
     .img-mover{
         width: 25px;
