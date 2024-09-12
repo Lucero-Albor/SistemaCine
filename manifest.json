@@ -8,27 +8,72 @@
         "type": "image/png"
       },
       {
-        "src": "  ",
+        "src": " ./imagenes/Iconos/UsuarioB.png ",
         "sizes": "72x72",
         "type": "image/png"
       },
       {
-        "src": " ",
+        "src": "./imagenes/Inicio/Poster(2).jpg ",
         "sizes": "96x96",
         "type": "image/png"
       },
       {
-        "src": " ",
+        "src": " ./imagenes/Inicio/Poster(1).jpg",
         "sizes": "144x144",
         "type": "image/png"
       },
       {
-        "src": " ",
+        "src": " ./imagenes/Inicio/Poster(3).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(4).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(5).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(6).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(7).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(8).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(9).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(10).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Poster(11).jpg",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": " ./imagenes/Inicio/Publicidad(1).jpg",
         "sizes": "168x168",
         "type": "image/png"
       },
       {
-        "src": " ",
+        "src": " ./imagenes/Inicio/Banner.jpg",
         "sizes": "192x192",
         "type": "image/png"
       }
