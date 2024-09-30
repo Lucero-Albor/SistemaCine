@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="css/styleIndex.css">
     <link rel="stylesheet" href="css/styleBarra.css">
     <title>Datos de pago</title>
-</head>
 
+    <style type="text/css">
+        .loader{
+            position: fixed;
+            left: 0px; 
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('imagenes/Iconos/shrek.gif') 50% 50% no-repeat rgb(249, 249, 249);
+        }
+
+        .loader:before{
+            position: fixed;
+            left: 45.5%;
+            top: 60%;
+        }
+
+        /* Evento clave para ejecutarlo de acuerdo a la acción que se realiza */
+        @keyframes hide {
+            0%{
+                opacity: 1;
+            }
+
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<div class="loader"></div>
 <body>
     <header style="display: flex; flex-wrap: wrap;">
         <div class="rectanguloNegro"></div>
@@ -188,4 +217,11 @@
         
     </div> -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+    // Todo lo que carga, ejecuta una acción
+    $(window).load(function(){
+        $(".loader").fadeOut("slow");
+    })
+</script>
 </html>
