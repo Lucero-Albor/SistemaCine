@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+        .loader{
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("./imagenes/Iconos/alien.gif") 50% 50% no-repeat rgb(249,249,249);
+        }
+        .loader::before{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+        }
+        @keyframes hide {
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+
+
+    </style> 
+    
 </head>
+<div class="loader"></div>
 <body>
    
     <center>
@@ -47,4 +77,10 @@
          </div>  
     </center>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js "> </script>
+    <script>
+        $(window).load(function(){
+            $(".loader").fadeOut("slow");
+        })
+    </script>
 </html>
