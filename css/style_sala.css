@@ -100,6 +100,10 @@ body{
     .container{
         padding: 0 40px;
     }
+    .img-mover:hover{
+        filter: brightness(50%);
+        cursor: pointer;
+    }
 }
 
 /*Estilos para pantallas de tablets*/
@@ -123,6 +127,10 @@ body{
     }
     .img-mover{
         width: 35px;
+    }
+    .active, img-mover:hover{
+        filter: brightness(30%);
+        cursor: pointer;
     }
 }
 
@@ -148,6 +156,10 @@ body{
     }
     .img-mover{
         width: 25px;
+    }
+    .img-mover:hover{
+        filter: brightness(50%);
+        cursor: pointer;
     }
 }
     
