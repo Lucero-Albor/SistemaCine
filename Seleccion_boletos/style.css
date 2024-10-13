@@ -1,5 +1,5 @@
 body {
-    background-image: url("file:///C:/Users/Julio/Documents/Dise%C3%B1o%20Web/1er_Parcial/Cine/Seleccion_boletos/ma.jpg");
+    background-image: url("/Seleccion_boletos/ma.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
