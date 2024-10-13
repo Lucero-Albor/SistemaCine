@@ -1,10 +1,12 @@
 <?php
 include'abrir_conexion.php';
+
+//mandar datos a bd asientos
 if(isset($_POST['submit'])){
     $datas=$_POST['data'];
 
     $allData=implode(",",$datas);
-    echo $allData;
+    //echo $allData;
 
     $sql="insert into `asientos` (num_asiento,sala,estatus)
      values('$allData','sala 1', 'ocupado')";
@@ -15,6 +17,7 @@ if(isset($_POST['submit'])){
         echo "se registro con exito";
     } 
 }
+
 
 ?>
 
@@ -67,10 +70,10 @@ if(isset($_POST['submit'])){
 
         <div class="letrasBarra">
             <font face="Arial Narrow">
-                <a class="letras1" style="color: white;" href="">Inicio</a>
-                <a class="letras1" style="color: white;" href="">Promociones</a>
-                <a class="letras1" style="color: white;" href="">Preventas</a>
-                <a class="letras1" style="color: white;" href="">Futuros estrenos</a>
+                <a class="letras1"  href="">Inicio</a>
+                <a class="letras1"  href="">Promociones</a>
+                <a class="letras1"  href="">Preventas</a>
+                <a class="letras1"  href="">Futuros estrenos</a>
             </font>
         </div>
         
@@ -108,7 +111,7 @@ if(isset($_POST['submit'])){
             
         </div>
         <div id="butacas" class="sillas">
-            <form method="post"  >
+            <form method="post" >
             <div >
                 <input type="checkbox" name="data[]" value="A1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="A2" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -217,6 +220,8 @@ if(isset($_POST['submit'])){
         <button name="submit" type="submit">Guardar</button>
        </form>
         </div>
+
+
         <div class="container2">
             <div class="cartel">
                 <center>
@@ -229,7 +234,7 @@ if(isset($_POST['submit'])){
                 <p style="color:#625D5D;">4:30 pm</p>
                 <p style="color:#625D5D;">Sala 1</p>
 
-                <button>Pago</button>
+                <button><a href="datos_pago.html">Pago</a></button>
                 </center>
         </div>
         </div>

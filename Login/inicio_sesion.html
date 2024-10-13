@@ -7,44 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
+
     <center>
         <div class="container">
-            <h1 style="font-size: 50px; text-align: center; font-family:Impact ">¡Bienvenido!</h1>
-            <h2 class="letra" style="text-align: center; font-family:Arial Narrow">Ingresa tu usuario y 
-            contraseña</h2>
-          
-         <img src="http://localhost/Dise%c3%b1o%20Web/1er_Parcial/Cine/Login/usuario.png" alt="" class="img">
-       
-        <center>
-            <div class="U">
-                <label style="font-family: Century Gothic">
-                    Usuario
-                </label>
-            </div>
-                <input type="text" class="usuario" placeholder="Usuario">
-            
-        </center>
-            <div class="C">
-                <label style="font-family: Century Gothic">
-                    Contraseña
-                 </label>
-            </div>
-   
-                <input type="password" class="contra" placeholder="Contraseña">
+            <h1 style="font-size: 50px; text-align: center; font-family: Impact;">¡Bienvenido!</h1>
+            <h2 class="letra" style="text-align: center; font-family: Arial Narrow;">Ingresa tu usuario y contraseña</h2>
+            <img src="../Login/usuario.png" alt="" class="img">
+
+            <form id="loginForm">
+                <div class="U">
+                    <label style="font-family: Century Gothic;">Usuario</label>
+                    <input type="text" name="loginUsuario" id="loginUsuario" class="usuario" placeholder="Usuario" required>
+                </div>
+
+                <div class="C">
+                    <label style="font-family: Century Gothic;">Contraseña</label>
+                    <input type="password" name="loginPassword" id="loginPassword" class="contra" placeholder="Contraseña" required>
+                </div>
 
                 <div class="links link">
-                    <a href="#" class="link">¿Olvidaste tu contraseña?</a>
-                    <a href="#" class="link">Crear cuenta</a>
+                    <a href="#" class="link" onclick="openModal()">¿Olvidaste tu contraseña?</a>
+                    <a href="#" class="link" id="crearCuentaBtn">Crear cuenta</a>
                 </div>
-      
-                <div> 
-                    <button class="boton">
-                        Ingresar
-                     </button>
-                </div>
-               
-         </div>  
+
+                <button type="submit" class="boton">Ingresar</button>
+            </form>
+        </div>  
     </center>
+
+  
+    <div id="registerModal" class="modal">
+        <div class="ventana-emergente">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Crear una nueva cuenta</h2>
+            <form id="registerForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" placeholder="Apellido" required><br>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" placeholder="Usuario" required><br>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Contraseña" required><br>
+
+                <button type="submit" class="boton">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="funcion.js"></script>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const usuario = document.getElementById('loginUsuario').value;
+            const password = document.getElementById('loginPassword').value;
+
+            // Validar que todos los campos estén llenos
+            if (!usuario || !password) {
+                alert('Por favor, completa todos los campos.');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('loginUsuario', usuario); 
+            formData.append('loginPassword', password); 
+
+            // Envia la solicitud con fetch
+            fetch('login.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Muestra el mensaje de inicio de sesión
+                if (data.includes("La contraseña es correcta.")) {
+                    // Redirigir a la página del index.html
+                    window.location.href = "index.html"; // Cambia esto a la página que deseas
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+    
 </body>
 </html>
