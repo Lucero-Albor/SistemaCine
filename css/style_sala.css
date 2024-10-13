@@ -94,11 +94,24 @@ body{
 }
 
 
-
+.asientos button{
+    width: 120px;
+    height: 50px;
+    font-family:  'Century Gothic';
+    font-size: x-large;
+    border-radius: 20px;
+    border-bottom: 0;
+    color:white;
+    background-color: #BA1C3F;
+}
 /*Estilos para pantallas escritorio*/
 @media(min-width: 1024px) and (max-width: 2048px){
     .container{
         padding: 0 40px;
+    }
+    .img-mover:hover{
+        filter: brightness(50%);
+        cursor: pointer;
     }
 }
 
@@ -122,7 +135,11 @@ body{
      
     }
     .img-mover{
-        width: 35px;
+        width: 25px;
+    }
+    .active, img-mover:hover{
+        filter: brightness(30%);
+        cursor: pointer;
     }
 }
 
@@ -148,6 +165,10 @@ body{
     }
     .img-mover{
         width: 25px;
+    }
+    .img-mover:hover{
+        filter: brightness(50%);
+        cursor: pointer;
     }
 }
     
