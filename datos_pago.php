@@ -68,85 +68,86 @@
             </form>
         </div>
     </header>
-   
-    <div class="container">
-        <div class="menu_pago">
-            <div class="datos">
-                <font face="Arial Narrow">
-                    <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
-                
-                    <div class="titular">
-                        <b style="font-size: 22px;">Nombre del titular</b><br>
-                        <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre"  required>
-                    </div>
-                </font>
+    
+    <form method="POST">
+        <div class="container">
+            <div class="menu_pago">
+                <div class="datos">
+                    <font face="Arial Narrow">
+                        <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
+                    
+                        <div class="titular">
+                            <b style="font-size: 22px;">Nombre del titular</b><br>
+                            <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre" name="nombre" required>
+                        </div>
+                    </font>
 
-                <div class="numeros">
-                    <div class="num_num">
-                        <font face="Arial Narrow">
-                            <b style="font-size: 22px;">Número de tarjeta</b>
-                        </font>
-                        <font face="Century">
-                            <input type="text" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;" id="num_card" maxlength="16" required>
-                        </font>
+                    <div class="numeros">
+                        <div class="num_num">
+                            <font face="Arial Narrow">
+                                <b style="font-size: 22px;">Número de tarjeta</b>
+                            </font>
+                            <font face="Century">
+                                <input type="text" placeholder="1111-2222-3333-4444" class="card" name="card" style="font-size: 16px;" id="num_card" maxlength="16" required>
+                            </font>
+                        </div>
+                        <div class="cvv_num">
+                            <font face="Arial Narrow">
+                                <b style="font-size: 22px;">CVV</b>
+                            </font>
+                            <font face="Century">
+                                <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" name="cvv" maxlength="3" required>
+                            </font>
+                        </div>
                     </div>
-                    <div class="cvv_num">
-                        <font face="Arial Narrow">
-                            <b style="font-size: 22px;">CVV</b>
-                        </font>
-                        <font face="Century">
-                            <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" maxlength="3" required>
-                        </font>
-                    </div>
+
+                    <font face="Arial Narrow"><b style="font-size: 22px;"> Fecha de expiración </b><br></font>
+                    <font face="Century">
+                        <select name="mes" style="font-size: 16px;" class="card" required> 
+                            <option>-- Mes --</option>
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                            <option>Julio</option>
+                            <option>Agosto</option>
+                            <option>Septiembre</option>
+                            <option>Octubre</option>
+                            <option>Noviembre</option>
+                            <option>Diciembre</option>
+                        </select>
+                        <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" name="anio" maxlength="4" required>
+                    </font>
+                    <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
+                    <button class="pagar" name="pagar" type="submit" style="font-size: 25px;">Realizar pago</button>
+                </div>
+            </div>
+            
+            <div class="detalles">
+                <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px" height="220px">
+                
+                <div class="info">
+                    <font face="Arial Narrow">
+                        <h2 style="font-size: 30px;">Detalles</h2>
+                        <span style="font-size: 20px;">Lugar: Altacia</span><br>
+                        <span style="font-size: 20px;">Fecha: Lunes 4 de enero</span><br>
+                        <span style="font-size: 20px;">Hora: 4:30 pm</span><br>
+                        <span style="font-size: 20px;">Sala: 007</span><br>
+                        <span style="font-size: 20px;">Idioma: Español</span><br>
+                    </font>
                 </div>
 
-                <font face="Arial Narrow"><b style="font-size: 22px;"> Fecha de expiración </b><br></font>
-                <font face="Century">
-                    <select name="mes" style="font-size: 16px;" class="card" required> 
-                        <option>-- Mes --</option>
-                        <option>Enero</option>
-                        <option>Febrero</option>
-                        <option>Marzo</option>
-                        <option>Abril</option>
-                        <option>Mayo</option>
-                        <option>Junio</option>
-                        <option>Julio</option>
-                        <option>Agosto</option>
-                        <option>Septiembre</option>
-                        <option>Octubre</option>
-                        <option>Noviembre</option>
-                        <option>Diciembre</option>
-                    </select>
-                    <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" maxlength="4" required>
-                </font>
-                <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
-                <button class="pagar" style="font-size: 25px;">Realizar pago</button>
+                <div class="total">
+                    <font face="Arial Narrow">
+                        <h2 style="font-size: 30px;">Total a pagar</h2>
+                        <h3 style="font-size: 30px;">$98.38 MXN</h3>    
+                    </font>
+                </div>
             </div>
         </div>
-        
-        <div class="detalles">
-            <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px" height="220px">
-            
-            <div class="info">
-                <font face="Arial Narrow">
-                    <h2 style="font-size: 30px;">Detalles</h2>
-                    <span style="font-size: 20px;">Lugar: Altacia</span><br>
-                    <span style="font-size: 20px;">Fecha: Lunes 4 de enero</span><br>
-                    <span style="font-size: 20px;">Hora: 4:30 pm</span><br>
-                    <span style="font-size: 20px;">Sala: 007</span><br>
-                    <span style="font-size: 20px;">Idioma: Español</span><br>
-                </font>
-            </div>
-
-            <div class="total">
-                <font face="Arial Narrow">
-                    <h2 style="font-size: 30px;">Total a pagar</h2>
-                    <h3 style="font-size: 30px;">$98.38 MXN</h3>    
-                </font>
-            </div>
-        </div>
-    </div>
-
+    </form>
     <!-- <font face="Arial Narrow">
         <h1 class="tit" style="font-size: 40px;">Datos de pago</h1>
     
@@ -225,3 +226,29 @@
     })
 </script>
 </html>
+
+<?php
+    include'abrir_conexion.php';
+    if(isset($_POST['pagar'])){
+        $nombre = $_POST['nombre'];
+        $card = $_POST['card'];
+        $cvv = $_POST['cvv'];
+        $fecha = $_POST['mes'];
+        $anio = $_POST['anio'];
+
+        $sql = "INSERT INTO datos_pago (titular, num_tarjeta, cvv, mes, anio)
+                VALUES ('$nombre','$card','$cvv','$fecha','$anio')";
+
+        $result = mysqli_query($conn, $sql);
+
+        if($result){
+            echo "Registro correcto";
+        } 
+        else{
+            echo "Fallo de registro";
+        }
+    }
+    else{
+        echo "Error";
+    }
+?>
