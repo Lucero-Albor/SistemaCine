@@ -77,7 +77,7 @@
                 
                     <div class="titular">
                         <b style="font-size: 22px;">Nombre del titular</b><br>
-                        <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre"  required>
+                        <input type="text" placeholder="Juan Pérez" class="card" style="font-size: 16px;" id="nombre" name="nombre" required>
                     </div>
                 </font>
 
@@ -87,7 +87,7 @@
                             <b style="font-size: 22px;">Número de tarjeta</b>
                         </font>
                         <font face="Century">
-                            <input type="text" placeholder="1111-2222-3333-4444" class="card" style="font-size: 16px;" id="num_card" maxlength="16" required>
+                            <input type="text" placeholder="1111-2222-3333-4444" class="card" name="card" style="font-size: 16px;" id="num_card" maxlength="16" required>
                         </font>
                     </div>
                     <div class="cvv_num">
@@ -95,7 +95,7 @@
                             <b style="font-size: 22px;">CVV</b>
                         </font>
                         <font face="Century">
-                            <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" maxlength="3" required>
+                            <input type="text" placeholder="123" style="font-size: 16px;" class="card" id="cvv" name="cvv" maxlength="3" required>
                         </font>
                     </div>
                 </div>
@@ -117,10 +117,10 @@
                         <option>Noviembre</option>
                         <option>Diciembre</option>
                     </select>
-                    <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" maxlength="4" required>
+                    <input type="text" placeholder="2024" style="font-size: 16px;" class="card" id="anio" name="anio" maxlength="4" required>
                 </font>
                 <img class="tarjeta" src="imagenes/Iconos/tarjetas.png" alt="">
-                <button class="pagar" style="font-size: 25px;">Realizar pago</button>
+                <button class="pagar" type="submit" style="font-size: 25px;">Realizar pago</button>
             </div>
         </div>
         
@@ -225,3 +225,29 @@
     })
 </script>
 </html>
+
+<?php
+    include'abrir_conexion.php';
+    if(isset($_POST['pagar'])){
+        $nombre = $_POST['nombre'];
+        $card = $_POST['card'];
+        $cvv = $_POST['cvv'];
+        $fecha = $_POST['mes'];
+        $anio = $_POST['anio'];
+
+        $sql = "insert into 'datos_pago' (titular, num_tarjeta, cvv, mes, anio)
+                values ('$nombre','$card','$cvv','$fecha','$anio')";
+
+        $result = mysqli_query($conn, $sql);
+
+        if($result){
+            echo "Registro correcto";
+        } 
+        else{
+            echo "Fallo de registro";
+        }
+    }
+    else{
+        echo "Error";
+    }
+?>
