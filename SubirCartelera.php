@@ -12,10 +12,10 @@
 
     <title>Subir cartelera</title>
 </head>
-<body>
-    <div style="padding-left: 80px; padding-right: 80px;">
+<body background="imagenes/Fondos/FondoSubirC.jpg" style="background-repeat: no-repeat;  background-position: center; background-attachment: fixed; background-size: 100% 100%;">
+    <div style="padding-left: 150px; padding-right: 150px;">
         <center>
-            <br>
+            <br><br><br>
             <h1>Datos cartelera</h1>
             <br><br>
         <form action="guardarCartelera.php" method="POST" enctype="multipart/form-data">
