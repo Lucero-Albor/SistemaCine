@@ -123,7 +123,7 @@ if (mysqli_multi_query($conn, $sql)) {
                     Fecha:<br/> <?php echo $fecha; ?> Hora: <?php echo $horario; ?><br/><br/>
                     Asientos:<br/> <?php echo implode(', ', $asientos); ?><br/><br/>
                     Tus boletos:<br/> <?php echo $nombre; ?> (<?php echo $idioma; ?>)<br/><br/>
-                    Cupón:<br/> <?php echo $nombre; ?> (<?php echo $idioma; ?>)<br/><br/>
+                    Cupón:<br/> <?php echo $descripcion; ?><br/><br/>
                     Total pagado:<br/> <?php echo $total; ?><br/><br/>
                 </p>
             </div>
