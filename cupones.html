@@ -5,59 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cupones</title>
     <link rel="stylesheet" href="./css/styleCupones.css">
+    <style type="text/css">
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("./201w.gif") 50% 50% no-repeat rgb(249,247,249);
+        }
+        .loader:before {
+            position: fixed;
+            left: 50%;
+            top: 60%;
+        }
+        @keyframes hide {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="rectanguloNegro"></div>
-        <div class="rectanguloRojo">
-            <nav>
-                <ul class="menu-horizontal">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Promociones</a></li>
-                    <li><a href="">Preventas</a></li>
-                    <li><a href="">Futuros Estrenos</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px" alt="">
+<header>
+    <div class="rectanguloNegro"></div>
+    <div class="rectanguloRojo">
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="">Preventas</a></li>
+                <li><a href="">Futuros Estrenos</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px" alt="">
 
-        <div class="imgUsuario">
-            <a href="inicio_sesion.html">
-                <img src="imagenes/Iconos/usuarioB.png" width="50px">
-            </a>
+    <div class="imgUsuario">
+        <a href="inicio_sesion.html">
+            <img src="imagenes/Iconos/usuarioB.png" width="50px">
+        </a>
+    </div>
+</header>
+
+<div class="content">
+    <div class="contenedores">
+        <div class="contenedor" data-cupon="1">
+            <p>Martes <br/>
+                10 x 1 <br/>
+                en todas las salas</p>
+            <div class="linea-punteada"></div>
         </div>
-    </header>
-    <div class="content">
-        <div class="contenedores">
-            <div class="contenedor">
-                <p>Martes <br/>
-                    10 x 1 <br/>
-                    en todas las salas</p>
-                <div class="linea-punteada"></div>
-            </div>
-            <div class="contenedor">
-                <p>Refil gratis <br/>
-                    Palomitas / Refrescos</p>
-                <div class="linea-punteada"></div>
-            </div>
-            <div class="contenedor">
-                <p>Combo <br/>
-                    Cumpleaños</p>
-                <div class="linea-punteada"></div>
-            </div>
-            <div class="contenedor">
-                <p>MATINE <br/>
-                    4 X $100 <br/>
-                    en todas las salas</p>
-                <div class="linea-punteada"></div>
-            </div>
+        <div class="contenedor" data-cupon="3">
+            <p>Refil gratis <br/>
+                Palomitas / Refrescos</p>
+            <div class="linea-punteada"></div>
+        </div>
+        <div class="contenedor" data-cupon="2">
+            <p>Combo <br/>
+                Cumpleaños</p>
+            <div class="linea-punteada"></div>
+        </div>
+        <div class="contenedor" data-cupon="4">
+            <p>MATINE <br/>
+                4 X $100 <br/>
+                en todas las salas</p>
+            <div class="linea-punteada"></div>
         </div>
     </div>
-    <div class="boton-container">
-        <button class="boton-sin-combo">Sin combo</button>
-    </div>    
+</div>
+
+<div class="boton-container">
+    <button class="boton-sin-combo" data-cupon="7">Sin combo</button>
+</div>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+
+    $(document).ready(function() {
+        // al dar clic en los cupones
+        $('.contenedor, .boton-sin-combo').click(function() {
+            let cuponId = $(this).data('cupon'); // obtener id del cupón
+            let boletoId = 1; // modificar en el boleto 1
+            
+            // peticion AJAX para actualizar la base de datos
+            $.ajax({
+                url: 'actualizar_boleto.php', 
+                type: 'POST',
+                data: {
+                    id_boleto: boletoId,
+                    id_cupon: cuponId
+                },
+                success: function(response) {
+                    // Redirigir a sala.php después de que se haya actualizado
+                    window.location.href = 'sala.php';
+                },
+                error: function() {
+                    alert('Hubo un error al actualizar el cupón. Intenta de nuevo.');
+                }
+            });
+        });
+    });
+</script>
+
 </html>
