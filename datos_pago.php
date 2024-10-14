@@ -243,10 +243,8 @@
 
         if($result){
             echo "Registro correcto";
+            header("Location: boletos.html");
         } 
-        else{
-            echo "Fallo de registro";
-        }
     }
     else{
         echo "Error";

@@ -128,12 +128,37 @@
         <div class="menu">
             <div class="info">
                 <div class="fotos">
-                    <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px"alt="">
+                <?php
+                    include'abrir_conexion.php';
+                    $sql="SELECT * FROM carteleras";
+                    $resultado=$conn->query($sql);
+
+                    if ($resultado){
+                        while($fila = $resultado-> fetch_assoc()){
+                            $foto[] = base64_encode($fila['foto']);
+                        }
+                        echo '<img class="cartelera" name = "cartelera" src="data:'.';base64,'.$foto[0].'" width="150px"alt="">';
+                    }
+                ?>
+                    <!-- <img class="cartelera" name="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px"alt=""> -->
                 </div>
 
                 <div class="horarios">
                     <font face="Arial Narrow">
-                        <h1 class="nombre">Deadpool & Wolverine</h1>
+                        <h1 class="nombre" name="nombre">
+                            <?php
+                                include'abrir_conexion.php';
+                                $sql="SELECT * FROM carteleras";
+                                $resultado=$conn->query($sql);
+                            
+                                if ($resultado){
+                                    while($fila = $resultado-> fetch_assoc()){
+                                        $nombres[] = htmlspecialchars($fila['nombre']);
+                                    }
+                                    echo($nombres[0]);
+                                }
+                            ?>
+                        </h1>
                         <b>Español:</b>
                     </font>
                     <button class="hora">2:10 pm</button>
@@ -152,12 +177,36 @@
 
             <div class="info">
                 <div class="fotos">
-                    <img class="cartelera" src="imagenes/Inicio/Poster(5).jpg" width="150px"alt="">
+                    <?php
+                        include'abrir_conexion.php';
+                        $sql="SELECT * FROM carteleras";
+                        $resultado=$conn->query($sql);
+
+                        if ($resultado){
+                            while($fila = $resultado-> fetch_assoc()){
+                                $foto[] = base64_encode($fila['foto']);
+                            }
+                            echo '<img class="cartelera" name = "cartelera" src="data:'.';base64,'.$foto[1].'" width="150px"alt="">';
+                        }
+                    ?>
                 </div>
 
                 <div class="horarios">
                     <font face="Arial Narrow">
-                    <h1 class="nombre">Shrek 2</h1>
+                    <h1 class="nombre" name = "nombre">
+                        <?php
+                            include'abrir_conexion.php';
+                            $sql="SELECT * FROM carteleras";
+                            $resultado=$conn->query($sql);
+
+                            if ($resultado){
+                                while($fila = $resultado-> fetch_assoc()){
+                                    $nombres[] = htmlspecialchars($fila['nombre']);
+                                }
+                                echo($nombres[1]);
+                            }
+                        ?>
+                    </h1>
                     <b>Español:</b></font>
                     <font face="Century">
                         <button class="hora">2:10 pm</button>
@@ -179,102 +228,6 @@
                 </div>     
             </div>
         </div>
-
-
-        <!-- <div class="detalles"></div>
-            <div class="fechas">
-                <h2 class="titulos">Fechas</h2>
-                <button>Mañana</button>
-                <button>Vie 1 ene.</button>
-                <button>Sáb 2 ene.</button>
-            </div>
-
-            <div class="fechas">
-                <button>Dom 3 ene.</button>
-                <button>Lun 4 ene.</button>
-                <button>Mar 5 ene.</button>
-            </div>
-
-            <h2 class="titulos">Películas</h2>
-            <div class="cartelera">
-                <input type="radio" name="peli" value="deadpool"><label for="deadpool" class="movie" style="font-size: 22px;">Deadpool & Wolverine</label>
-            </div>
-
-            <div class="cartelera">
-                <input type="radio" name="peli" value="shrek"> <label for="shrek" class="movie" style="font-size: 22px;">Shrek 2</label>
-            </div>
-
-            <div class="cartelera">
-                <input type="radio" name="peli" value="alien"> <label for="alien" class="movie" style="font-size: 22px;">Alien</label>
-            </div>
-
-            <div class="cartelera">
-                <input type="radio" name="peli" value="todas" checked> <label for="todas" class="movie" style="font-size: 22px;">Todas</label> 
-            </div>
-
-            <h2 class="titulos">Idiomas</h2>
-
-            <div class="idioma">
-                <input type="radio" name="lenguaje" value="sub"> <label for="sub" class="leng" style="font-size: 22px;">Subtitulada</label>
-            </div>
-
-            <div class="idioma">
-                <input type="radio" name="lenguaje" value="esp"> <label for="esp" class="leng" style="font-size: 22px;">Español</label>
-            </div>
-
-            <div class="idioma">
-                <input type="radio" name="lenguaje" value="todas" checked> <label for="todas" class="leng" style="font-size: 22px;">Todas</label>
-            </div>
-
-            <button class="boton">Sigue con tu compra</button>
-        </div>
-
-        <div class="menu">
-            <div class="peliculas">
-                <img class="cartelera" src="imagenes/Inicio/Poster(2).jpg" width="150px"alt="">
-                <h1 class="nombre">Deadpool & Wolverine</h1>
-            
-                <div class="horarios">
-                    <span>Español</span>
-                    <button>2:10 pm</button>
-                    <button>3:00 pm</button>
-                    <button>4:30 pm</button>
-                    <button>5:50 pm</button>
-                    <button>7:20 pm</button>
-                </div>
-                    
-                <div class="horarios">
-                    <span>Subtitulada</span>
-                    <button>1:15 pm</button>
-                    <button>2:40 pm</button>
-                    <button>5:30 pm</button>
-                    <button>6:50 pm</button>        
-                </div>
-            </div>
-
-            <div class="peliculas">
-                <img class="cartelera" src="imagenes/Inicio/Poster(5).jpg" width="150px"alt="">
-                <h1 class="nombre">Shrek 2</h1>
-            
-
-                <div class="horarios">
-                    <span>Español</span>
-                    <button>2:10 pm</button>
-                    <button>3:00 pm</button>
-                    <button>4:30 pm</button>
-                    <button>5:50 pm</button>
-                    <button>7:20 pm</button>
-                </div>
-                
-                <div class="horarios">
-                    <span>Subtitulada</span>
-                    <button>1:15 pm</button>
-                    <button>2:40 pm</button>
-                    <button>5:30 pm</button>
-                    <button>6:50 pm</button>        
-                </div>
-            </div>  
-        </div> -->
     </div>
 </body>
 
@@ -286,3 +239,4 @@
     })
 </script>
 </html>
+
