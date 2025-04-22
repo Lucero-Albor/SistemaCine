@@ -41,7 +41,9 @@
 <div class="loader"></div>
 
 <body>
-    <header style="display: flex; flex-wrap: wrap;">
+
+
+    <!-- <header style="display: flex; flex-wrap: wrap;">
         <div class="rectanguloNegro"></div>
         <div class="rectanguloRojo"></div>
 
@@ -68,7 +70,7 @@
                 <input class="input" type="submit" value="Buscar">
             </form>
         </div>
-    </header>
+    </header> -->
     <!-- <nav class="barra">
         <ul>
             <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">

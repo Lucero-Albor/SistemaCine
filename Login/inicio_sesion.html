@@ -16,18 +16,18 @@
 
             <form id="loginForm">
                 <div class="U">
-                    <label style="font-family: Century Gothic;">Usuario</label>
+                    <label style="font-family: Century Gothic;"><b>Usuario</b></label>
                     <input type="text" name="loginUsuario" id="loginUsuario" class="usuario" placeholder="Usuario" required>
                 </div>
 
                 <div class="C">
-                    <label style="font-family: Century Gothic;">Contraseña</label>
+                    <label style="font-family: Century Gothic;"><b>Contraseña</b></label>
                     <input type="password" name="loginPassword" id="loginPassword" class="contra" placeholder="Contraseña" required>
                 </div>
 
                 <div class="links link">
-                    <a href="#" class="link" onclick="openModal()">¿Olvidaste tu contraseña?</a>
-                    <a href="#" class="link" id="crearCuentaBtn">Crear cuenta</a>
+                    <a style="color: #BA1C3F" href="#" class="link" onclick="openModal()">¿Olvidaste tu contraseña?</a>
+                    <a style="color: #BA1C3F" href="#" class="link" id="crearCuentaBtn">Crear cuenta</a>
                 </div>
 
                 <button type="submit" class="boton">Ingresar</button>
@@ -87,7 +87,7 @@
                 alert(data); // Muestra el mensaje de inicio de sesión
                 if (data.includes("La contraseña es correcta.")) {
                     // Redirigir a la página del index.html
-                    window.location.href = "index.html"; // Cambia esto a la página que deseas
+                    window.location.href = "index.php"; // Cambia esto a la página que deseas
                 }
             })
             .catch(error => {

@@ -12,7 +12,7 @@ body{
     margin-right: 40%;
     margin-left: 3%;
     border-radius: 10px;
-    background: #f4f1f1;
+    background: #ffffff;
     text-align:center ;
 }
 .pantalla{
@@ -22,27 +22,29 @@ body{
     background: #000000;
     align-items: center;
     color:white;
-    font-family:  'Arial Narrow';
+    font-family:  'Century Gothic';
+    font-weight: bold;
 }
 
 .Filas{
     
     color:black;
-    font-family:  'Arial Narrow';
+    font-family:  'Century Gothic';
     text-align:justify;
     list-style: none;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
    font-size: x-large;
-   line-height: 56.5px;
+   line-height: 40px;
+   font-weight: bold;
 
 }
 
 
 .sillas{
-    margin-top: -450px;    
+    margin-top: -320px;    
     justify-content: flex-start;
-    margin-left: 170px;
+    margin-left: 120px;
     display: flex;
     flex-wrap: wrap;
     line-height: 25px;  
@@ -50,48 +52,64 @@ body{
 
 
 .cupo{
-    columns: 2;
+    columns: 1;
     column-gap: 10px;
     text-align: center;
-    font-family:  'Arial Narrow';
+    font-family:  'Century Gothic';
+    font-weight: bold;
     margin-top: 10px;
     list-style:none;
+}
+
+.cupo img{
+    border-radius: 10px;
+}
+
+.container{
+    margin-top: 10px;
 }
 
 .container2{
     
     width: 30%;
     height: 550px;
-    margin-top: -568px;
+    margin-top: -551px;
     margin-left:  60%;
     border-radius: 10px;
-    background: #f4f1f1;
+    background: #ffffff;
     text-align:center ;
 }
 
+.container2 img{
+    border-radius: 10px;
+}
 .cartel{
-    font-size: medium;
+    /* font-size: medium; */
     margin-top: 1px;
-    font-family:  'Arial Narrow';
 }
 
 .cartel p{
-    line-height: 3px;
+    line-height: 5px;
     text-align: justify;
     margin-left: 50px;
 }
 
 
 .cartel button{
-    width: 100px;
+    width: 120px;
     height: 50px;
     font-family:  'Century Gothic';
     font-size: x-large;
     border-radius: 20px;
+    border-color: #BA1C3F;
     border-bottom: 0;
     color:white;
-    background-color: #BA1C3F;
-     
+    background-color: #BA1C3F;   
+}
+
+.cartel button:hover{
+    background-color: #721226;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -110,6 +128,19 @@ a{
     background-color: #BA1C3F;
     
 }
+
+.asientos button:hover{
+    background-color: #721226;
+    color: white;
+}
+
+.infoPelicula{
+    margin-top: 15px;
+}
+input[type="checkbox"] {
+    accent-color: #BA1C3F; 
+  }
+ 
 /*Estilos para pantallas escritorio*/
 @media(min-width: 1024px) and (max-width: 2048px){
     .container{

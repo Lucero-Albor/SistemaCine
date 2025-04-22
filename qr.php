@@ -108,7 +108,7 @@ if (mysqli_multi_query($conn, $sql)) {
         </div>
         <img class="titulo" src="imagenes/Iconos/LogoCine.png" width="200px" alt="">
         <div class="imgUsuario">
-            <a href="inicio_sesion.html">
+            <a href="login/inicio_sesion.html">
                 <img src="imagenes/Iconos/usuarioB.png" width="50px">
             </a>
         </div>

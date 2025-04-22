@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selección de boletos</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+  
+    <title>Selección de boletos</title>
+    
 </head>
 <body>
-    <header>
-        <div class="rectanguloNegro"></div>
-        <div class="rectanguloRojo"></div>
+   <!-- Barra superior -->
+  <nav style="background-color:#000000;" class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      
+      <font face="Arial Narrow">
+      <a class="navbar-brand"  href="index.php">
+      <img src="../imagenes/Iconos/LogoCine.png" width="130px">&nbsp;&nbsp;
+      </a>
+      </font>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+        <li class="nav-item">
+          <a class="nav-link active" style="color: white; font-size: 18px;" aria-current="page" href="#">Promociones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white; font-size: 18px;" href="#">Alimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white; font-size: 18px;" href="#">Futuros estrenos</a>
+        </li>
+        <li class="nav-item dropdown tramite">
+            <a class="nav-link dropdown-toggle " style="color: white; font-size: 18px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="">Contacto</a></li>
+              <li><a class="dropdown-item" href="">Eventos</a></li>
+              
+          </ul>
+          </li>
+      </ul>  
 
-        <img class="logo" src="../Seleccion_boletos/LogoCine.png" width="200px" alt="Logo">
-        
-        <nav class="navegacion">
-            <a href="#" class="navegacionE">Inicio</a>  
-            <a href="#" class="navegacionE">Promociones</a>
-            <a href="#" class="navegacionE">Preventas</a>
-            <a href="#" class="navegacionE">Futuros estrenos</a>
-        </nav>
+        <a class="iniciaSesion" href="login/inicio_sesion.html">
+        <img src="../imagenes/Iconos/usuarioB.png" width="50px" alt="">
+        </a>&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    
+  </nav>
 
-        <div class="Ayuda">Ayuda</div>
-
-        <img src="../Seleccion_boletos/usuarioB.png" alt="Usuario" class="usuarioimg">
-    </header>
+  <!-- Barra roja -->
+  <nav style="background-color:#BA1C3F;" class="navbar navbar-expand-lg bg-body-tertiary">
+  </nav>
     
     <main class="main-container">
         <div class="content">

@@ -27,11 +27,14 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleccionar Asientos</title>
-    <link rel="stylesheet" href="css/styleBarra.css">
-    <link rel="stylesheet" href="css/styleIndex.css">
     <link rel="stylesheet" href="css/style_sala.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 
-    <style type="text/css">
+    <!-- <style type="text/css">
         .loader{
             position: fixed;
             left: 0px;
@@ -53,7 +56,7 @@ if(isset($_POST['submit'])){
             100%{
                 opacity: 0;
             }
-        }
+        } -->
 
 
 
@@ -62,36 +65,52 @@ if(isset($_POST['submit'])){
 <div class="loader"></div>
 
 <body>
-    <div class="container">
-       
-    <header style="display: flex; flex-wrap: wrap;">
-        <div class="rectanguloNegro"></div>
-        <div class="rectanguloRojo"></div>
 
-        <div class="letrasBarra">
-            <font face="Arial Narrow">
-                <a class="letras1"  href="">Inicio</a>
-                <a class="letras1"  href="">Promociones</a>
-                <a class="letras1"  href="">Preventas</a>
-                <a class="letras1"  href="">Futuros estrenos</a>
-            </font>
-        </div>
+<!-- Barra superior -->
+<nav style="background-color:#000000;" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
         
-        <img class="logoCine" src="imagenes/Iconos/LogoCine.png" width="200px"alt="">
-
-         <div class="imgUsuario">
-            <a href="inicio_sesion.html">
-                <img src="imagenes/Iconos/usuarioB.png" width="50px">
-            </a>
+        <font face="Arial Narrow">
+        <a class="navbar-brand"  href="index.php">
+        <img src="imagenes/Iconos/LogoCine.png" width="130px">&nbsp;&nbsp;
+        </a>
+        </font>
+        
+        <div  style=""  class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white; font-size: 18px;" aria-current="page" href="#">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#">Alimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#">Futuros estrenos</a>
+          </li>
+          <li class="nav-item dropdown tramite">
+              <a class="nav-link dropdown-toggle " style="color: white; font-size: 18px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Más
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Contacto</a></li>
+                <li><a class="dropdown-item" href="">Eventos</a></li>
+                
+            </ul>
+            </li>
+        </ul>  
+        
+          <a class="iniciaSesion" href="login/inicio_sesion.html">
+          <img src="imagenes/Iconos/usuarioB.png" width="50px" alt="">
+          </a>&nbsp;&nbsp;
         </div>
+      </div>
+      
+    </nav>
+    <nav style="background-color:#BA1C3F;" class="navbar navbar-expand-lg bg-body-tertiary">
+    </nav>
+    
+    <div class="container">
 
-        <div style="margin-top: -100px;">
-            <form action="" method="get">
-                <input type="text" name="buscar" id="buscar">
-                <input class="input" type="submit" value="Buscar">
-            </form>
-        </div>
-    </header>
     <center>
         <div class="asientos">
             <center>
@@ -121,8 +140,6 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="A6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="A7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="A8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="A9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="A10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 </div>
             <div>
                 <input type="checkbox" name="data[]" value="B1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -133,8 +150,7 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="B6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="B7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="B8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="B9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="B10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
+                
            </div>
            <div >
                 <input type="checkbox" name="data[]" value="C1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -145,8 +161,7 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="C6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="C7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="C8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="C9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="C10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
+               
             </div>
             <div >
                 <input type="checkbox" name="data[]" value="D1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -157,8 +172,7 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="D6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="D7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="D8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="D9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="D10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
+                
             </div>
             <div >
                 <input type="checkbox" name="data[]" value="E1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -169,8 +183,7 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="E6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="E7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="E8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="E9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="E10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
+                
             </div>
             <div >
                 <input type="checkbox" name="data[]" value="F1" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
@@ -181,8 +194,6 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="F6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="F7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="F8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="F9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="F10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 
                 </div>
              <div >
@@ -194,8 +205,6 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="G6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="G7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="G8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="G9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="G10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
 
             </div>    
             <div >
@@ -208,16 +217,18 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="data[]" value="H6" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="H7" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
                 <input type="checkbox" name="data[]" value="H8" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="H9" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
-                <input type="checkbox" name="data[]" value="H10" class="img-mover"><img src="imagenes/Iconos/silla.png" width="40px"alt=""></input>
+    
                </div>
             
         </center>
         <div class="cupo">
-            <li style="list-style: url('imagenes/Iconos/colorRojo.png');" >Asiento libre </li>
-            <li style="list-style: url('imagenes/Iconos/colorOpaco.png');">Asiento ocupado</li>
+            <img src="imagenes/Iconos/colorRojo.png" alt=""> Asiento libre
+            &nbsp;&nbsp;&nbsp;
+            <!-- <li style="list-style: url('imagenes/Iconos/colorRojo.png');" >Asiento libre </li> -->
+            <!-- <li style="list-style: url('imagenes/Iconos/colorOpaco.png');">Asiento ocupado</li> -->
+            <img src="imagenes/Iconos/colorOpaco.png" alt=""> Asiento ocupado
         </div>
-        <button name="submit" type="submit">Guardar</button>
+        <!-- <button name="submit" type="submit">Guardar</button> -->
        </form>
         </div>
 
@@ -225,16 +236,25 @@ if(isset($_POST['submit'])){
         <div class="container2">
             <div class="cartel">
                 <center>
-                <h2 style="color:#000000; ">Deadpool and Wolverine</h2>
-                <img src="imagenes/Inicio/Poster(2).jpg"  width="200">
+                    <font face="impact">
+                    <h2 style="color:#000000; ">Deadpool y Wolverine</h2>
+                    </font>
                 
-                <p style="color:#625D5D;">Español</p>
-                <p style="color:#625D5D;">Plaza el parque</p>
-                <p style="color:#625D5D;">Lunes 4 de enero</p>
-                <p style="color:#625D5D;">4:30 pm</p>
-                <p style="color:#625D5D;">Sala 1</p>
+                <img src="imagenes/Inicio/Poster(2).jpg"  width="180">
+                
+                <font face="arial narrow">
+                <div class="infoPelicula">
+                    <p style="color:#817c7c; font-size: 24px"><b>Español</b></p>
+                    <p style="color:#817c7c; font-size: 18px;"><b>Plaza el parque</b></p>
+                    <p style="color:#817c7c; font-size: 18px;"><b>Lunes 4 de enero</b></p>
+                    <p style="color:#817c7c; font-size: 18px;"><b>4:30 pm</b></p>
+                    <p style="color:#817c7c; font-size: 18px;"><b>Sala 1</b></p>
 
-                <button><a href="datos_pago.html">Pago</a></button>
+                    <a href="datos_pago.php">
+                        <button>Pago</button>
+                    </a>
+                </div>
+                </font>
                 </center>
         </div>
         </div>

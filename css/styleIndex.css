@@ -1,26 +1,30 @@
-body{
-    margin: 0;
-    padding: 0;
-}
 
-.container{
-    margin: 0;
-    padding: 0;
-}
-.rectanguloNegro{
-    width: 1366px;
-    height: 80px;
-    background-color:#000000;
+.carousel-caption {
+    left: 10%;
+    right: auto;
+    bottom: 20%;
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .btnComprar {
     display: flex;
-    flex-wrap: wrap;
-}
-.rectanguloRojo{
-    width: 1366px;
-    height: 40px;
-    background-color:#BA1C3F;
-    display: flex;
-    flex-wrap: wrap;
-}
+    gap: 10px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn.rojo {
+    background-color: #BA1C3F;
+    color: white;
+  }
+  
 
 .logoCine{
     margin-top: -100px;
@@ -30,111 +34,6 @@ body{
     flex-wrap: wrap;
 }
 
-.letrasBarra{
-    padding: 0px;
-    margin-left: 200px;
-    margin-top: -35px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.barra{
-    margin-top: -100px;
-}
-
-.letras1{
-    margin-top: 100px;
-    margin-left: 50px;
-    font-size: 22px;
-    color: white;
-    padding-bottom: 10px;
-}
-
-
-.imgUsuario{
-    margin-top: -120px;
-    margin-left: 1200px;
-    padding-bottom: 10px;
-}
-
-.btnBanner{
-    margin-top: -10px;
-    /* margin-left: 200px;  */
-}
-
-.btnComprar{
-    margin-top: -55px;
-    margin-left: 5px; 
-    width: 280px;
-    height: 55px;
-    border-radius: 15px;
-    background: #BA1C3F;
-    color: white;
-    border: none;
-    font-size: 28px;
-    font-weight: bold;
-    font-style: normal;
-    font-family: Century Gothic;
-}
-
-.btnTrailer{
-    margin: top -240px;
-    margin-left: 300px; 
-    width: 210px;
-    height: 55px;
-    border-radius: 15px;
-    background: white;
-    color: black;
-    border: none;
-    font-size: 28px;
-    font-weight: bold;
-    font-style: normal;
-    font-family: Century Gothic;
-}
-
-.textoBanner{
-    margin-top: -40px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: justify;
-    align-content: center;
-    align-self: center;
-    z-index: 1  ;
-    
-}
-.tituloBanner{
-    margin-top: -350px;
-    margin-left: 350px;
-    font-size: 52px;
-    color: white;
-    padding-top: 0px;
-    
-}
-
-.sinopsisBanner{
-    margin-top: -250px;
-    margin-left: 350px;
-    font-size: 22px;
-    color: white;
-    text-align:justify;
-    padding-bottom: 20px;
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-  
-}
-
-.recursosBanner{
-    margin-top: -100px;
-}
-
-.banner{
-    margin-top: 100px;
-    margin-left: 75px;
-    display: flex;
-    flex-wrap: wrap;
-   
-}
 
 .cartelera{
     display: flex;
@@ -144,51 +43,49 @@ body{
     margin-top: 50px;
 }
 
-.imgPoster1{
-    margin-top: -150px;
-    margin-left: -250px;
-    display: flex;
-    flex-wrap: wrap;
+.letrasCartelera{
+    margin-left: 5%;
 }
-
 .imgPoster2{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 30px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
-.imgPoster3{
-    margin-top: 10px;
-    margin-left:700px;
-    padding: 10px;
-}
+
+.imagenFileteado {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .imagenFileteado:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
 
 .publicidad1{
     margin-top: -10px;
-    margin-left: 50px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
 }
 
-#buscar{
-    width: 200px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    margin-top: -130px;
-    margin-left: 850px;
-    
-}
+.carruselPublicidad{
+    max-width: 360px; 
+  }
 
-.input{
-    background-color: #BA1C3F;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    height: 25px;
-}
+  .carruselPublicidad img{
+    border-radius: 10px;     
+  }
 
+  .publicidad2{
+    margin-top: -198px;
+    margin-left: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
 /*Estilos para pantallas escritorio*/
 @media(min-width: 1024px) and (max-width: 2048px){
     .container{

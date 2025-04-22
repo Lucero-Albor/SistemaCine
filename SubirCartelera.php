@@ -8,8 +8,8 @@
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-
+    <script src="js/bootstrap.bundle.js"></script>  
+    
     <title>Subir cartelera</title>
 </head>
 <body background="imagenes/Fondos/FondoSubirC.jpg" style="background-repeat: no-repeat;  background-position: center; background-attachment: fixed; background-size: 100% 100%;">

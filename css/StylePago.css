@@ -37,10 +37,27 @@ body{
     flex-wrap: wrap;
     width: 200px;
     height: 80px;
-    margin-left: 250px;
+    margin-left: 280px;
     margin-top: -70px;
 }
 
+.card{
+    padding-left: 20px;
+    border-color: black;
+    border-radius: 40px;
+    border-width: 3px;
+    height: 30px;
+}
+
+.card2{
+    margin-left: 35%;
+    margin-top: -30px;
+}
+
+.cartelera{
+    margin-left: 10%;
+    margin-top: 100px;
+}
 .detalles{
     display: flex;
     flex-direction: row;
@@ -61,16 +78,14 @@ body{
 }
 
 .info{
-    padding-left: 20px;
-    padding-top: 40px;
+   margin-top: -250px;
+   margin-left: 60%;
 }
 
-.card{
-    padding-left: 20px;
-    border-color: black;
-    border-radius: 40px;
-    border-width: 3px;
-    height: 30px;
+.tituloDetalle{
+    margin-top: 20px;
+    align-items: center;
+    margin-left: -7%;
 }
 
 #anio, #cvv{
