@@ -1,84 +1,40 @@
 {
-    "name": " TheZine",
-    "short_name": "TheZine",
-    "icons": [
+  "name": "TheZine",
+  "short_name":"TheZine",
+  "start_url":"./",
+  "description":"Sitio web para la exhibición de horarios y compra de boletos para cine",
+  "display": "standalone",
+  "icons": [
       {
-        "src": "./imagenes/Iconos/LogoCine.png",
-        "sizes": "48x48",
-        "type": "image/png"
+          "src":"./imagenes/Iconos/icono45.png",
+          "sizes":"45x45",
+          "type":"image/png"
       },
       {
-        "src": " ./imagenes/Iconos/UsuarioB.png ",
-        "sizes": "72x72",
-        "type": "image/png"
+          "src":"./imagenes/Iconos/icono64.png",
+          "sizes":"64x64",
+          "type":"image/png"
       },
       {
-        "src": "./imagenes/Inicio/Poster(2).jpg ",
-        "sizes": "96x96",
-        "type": "image/png"
+          "src":"./imagenes/Iconos/icono99.png",
+          "sizes":"99x99",
+          "type":"image/png"
       },
       {
-        "src": " ./imagenes/Inicio/Poster(1).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(3).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(4).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(5).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(6).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(7).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(8).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(9).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(10).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Poster(11).jpg",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Publicidad(1).jpg",
-        "sizes": "168x168",
-        "type": "image/png"
-      },
-      {
-        "src": " ./imagenes/Inicio/Banner.jpg",
-        "sizes": "192x192",
-        "type": "image/png"
+          "src":"./imagenes/Iconos/icono144.png",
+          "sizes":"144x144",
+          "type":"image/png"
       }
-    ],
-   
-        "start_url": "index.html?launcher=true"
-  
-  }
+  ],
+  "related_application":[
+          {
+              "platform":"web"
+          },
+          {
+              "platform": "localhost",
+              "url": "localhost"
+          }
+      ]
+
+}
+

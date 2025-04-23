@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="manifest.json">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="icon" href="imagenes/Iconos/icono64.png">
+    <link rel="manifest" href="manifest.json">
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
